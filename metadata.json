@@ -1,0 +1,6 @@
+{
+  "name": "AlumNet - Gautam Buddha University",
+  "description": "Alumni tracking, networking, searchable directory, mentorship portal, and events platform for Gautam Buddha University graduates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

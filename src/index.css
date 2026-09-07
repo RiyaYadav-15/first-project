@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-locania: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  --font-editorial: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-dark-canvas: #1a1a1a;
+  --color-dark-surface: #22201e;
+  --color-dark-card: #282522;
+  --color-dark-elevated: #302c28;
+  --color-dark-border: #3a3530;
+  --color-dark-border-light: #48423c;
+  
+  --color-accent-bronze: #a1958b;
+  --color-accent-warm: #8d7d70;
+  --color-accent-gold: #c99c7b;
+  --color-accent-cream: #f5f2ed;
+  --color-accent-muted: #786f67;
+
+  --color-gbu-brown-950: #12100e;
+  --color-gbu-brown-900: #1a1816;
+  --color-gbu-brown-800: #24211e;
+  --color-gbu-brown-700: #2d2a27;
+  --color-gbu-brown-600: #3a3530;
+  --color-gbu-brown-500: #504842;
+  --color-gbu-brown-300: #8d7d70;
+  --color-gbu-brown-100: #a1958b;
+  --color-gbu-brown-50: #f5f2ed;
+
+  --color-stone-canvas: #1a1a1a;
+  --color-stone-card: #242220;
+  --color-stone-border: #383430;
+  --color-stone-muted: #8d7d70;
+  --color-stone-dark: #f5f2ed;
+}
+
+/* Base typography and smooth layout styling */
+body {
+  font-family: var(--font-sans);
+  background-color: #1a1a1a;
+  color: #f5f2ed;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-locania {
+  font-family: var(--font-locania);
+  letter-spacing: 0.04em;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+/* Custom scrollbar for refined editorial dark feel */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3e3833;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8d7d70;
+}
+
+/* Hide scrollbar utility for sleek horizontal option strips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
