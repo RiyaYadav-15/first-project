@@ -14,19 +14,19 @@ export const Footer: React.FC = () => {
   const { setActiveTab, setIsAddAlumniModalOpen, setIsAuthModalOpen } = useApp();
 
   return (
-    <footer className="bg-[#141414] text-[#d6cfc7] border-t border-[#383430]">
+    <footer className="bg-black text-[#cbd5e1] border-t border-[#27272a]">
       {/* Top Banner */}
-      <div className="border-b border-[#383430] py-8 px-4 sm:px-6 lg:px-8">
+      <div className="border-b border-[#27272a] py-8 px-4 sm:px-6 lg:px-8 bg-[#09090b]">
         <div className="container mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-[#1a1816] flex items-center justify-center text-[#c99c7b] border border-[#383430]">
+            <div className="w-10 h-10 rounded-lg bg-[#042f2e] flex items-center justify-center text-[#2dd4bf] border border-[#0f766e] shadow-2xs">
               <GraduationCap className="w-6 h-6" />
             </div>
             <div>
-              <span className="font-locania text-xl font-bold tracking-wider text-[#f5f2ed] uppercase">
+              <span className="font-locania text-xl font-bold tracking-wider text-white uppercase">
                 AlumNet • GBU
               </span>
-              <p className="text-xs text-[#c99c7b]">
+              <p className="text-xs text-[#2dd4bf] font-medium">
                 Gautam Buddha University Alumni Association & Mentorship Cell
               </p>
             </div>
@@ -35,13 +35,13 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsAddAlumniModalOpen(true)}
-              className="px-3.5 py-1.5 rounded bg-[#8d7d70] hover:bg-[#a1958b] text-[#141414] text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer border border-[#8d7d70]"
+              className="px-3.5 py-1.5 rounded bg-[#0d9488] hover:bg-[#0f766e] text-white text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer border border-[#0d9488] shadow-xs"
             >
               Add Alumni Record
             </button>
             <button
               onClick={() => setIsAuthModalOpen(true)}
-              className="px-3.5 py-1.5 rounded bg-[#242220] hover:bg-[#2d2a27] text-[#f5f2ed] text-xs font-semibold uppercase tracking-wider border border-[#383430] transition-colors cursor-pointer"
+              className="px-3.5 py-1.5 rounded bg-[#18181b] hover:bg-[#27272a] text-[#2dd4bf] text-xs font-semibold uppercase tracking-wider border border-[#27272a] transition-colors cursor-pointer"
             >
               Sign In / Register
             </button>
@@ -55,13 +55,13 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: University Identity */}
           <div className="space-y-3">
-            <h4 className="font-locania text-base font-bold text-[#f5f2ed] tracking-wide uppercase">
+            <h4 className="font-locania text-base font-bold text-white tracking-wide uppercase">
               Gautam Buddha University
             </h4>
-            <p className="text-xs text-[#a1958b] leading-relaxed font-editorial text-[15px]">
+            <p className="text-xs text-[#cbd5e1] leading-relaxed font-editorial text-[15px]">
               Recognized under Section 2(f) and 12(B) of the UGC Act, 1956. A 511-acre residential university fostering academic brilliance and moral integrity along the Yamuna Expressway.
             </p>
-            <div className="text-xs text-[#c99c7b] space-y-1 pt-1 font-mono">
+            <div className="text-xs text-[#2dd4bf] space-y-1 pt-1 font-mono">
               <p className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 shrink-0" />
                 <span>Greater Noida, UP 201312</span>
@@ -75,14 +75,14 @@ export const Footer: React.FC = () => {
 
           {/* Col 2: Navigation Sections */}
           <div className="space-y-3">
-            <h4 className="font-locania text-xs font-bold text-[#c99c7b] uppercase tracking-widest">
+            <h4 className="font-locania text-xs font-bold text-[#2dd4bf] uppercase tracking-widest">
               Platform Navigation
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <button
                   onClick={() => { setActiveTab('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="text-[#cbd5e1] hover:text-[#2dd4bf] transition-colors cursor-pointer text-left"
                 >
                   Home Portal & Recommendations
                 </button>
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => { setActiveTab('directory'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="text-[#cbd5e1] hover:text-[#2dd4bf] transition-colors cursor-pointer text-left"
                 >
                   Searchable Alumni Directory
                 </button>
@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => { setActiveTab('mentorship'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="text-[#cbd5e1] hover:text-[#2dd4bf] transition-colors cursor-pointer text-left"
                 >
                   Career Mentorship & Jobs
                 </button>
@@ -106,7 +106,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => { setActiveTab('events'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="text-[#cbd5e1] hover:text-[#2dd4bf] transition-colors cursor-pointer text-left"
                 >
                   Event Announcements & Conclave
                 </button>
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => { setActiveTab('about'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="text-[#cbd5e1] hover:text-[#2dd4bf] transition-colors cursor-pointer text-left"
                 >
                   About Gautam Buddha University
                 </button>
@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => { setActiveTab('contact'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="hover:text-white transition-colors cursor-pointer"
+                  className="text-[#cbd5e1] hover:text-[#2dd4bf] transition-colors cursor-pointer text-left"
                 >
                   Alumni Relations Helpdesk
                 </button>
@@ -130,7 +130,7 @@ export const Footer: React.FC = () => {
               <li>
                 <button
                   onClick={() => { setActiveTab('login'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className="text-[#c99c7b] hover:text-[#f5f2ed] font-semibold transition-colors cursor-pointer flex items-center gap-1"
+                  className="text-[#2dd4bf] hover:text-[#5eead4] font-semibold transition-colors cursor-pointer flex items-center gap-1"
                 >
                   <span>Member Login & Guest Gateway</span>
                   <span>→</span>
@@ -141,10 +141,10 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: GBU Faculties / Schools */}
           <div className="space-y-3">
-            <h4 className="font-locania text-xs font-bold text-[#c99c7b] uppercase tracking-widest">
+            <h4 className="font-locania text-xs font-bold text-[#2dd4bf] uppercase tracking-widest">
               Faculties & Schools
             </h4>
-            <ul className="space-y-1.5 text-xs text-[#a1958b]">
+            <ul className="space-y-1.5 text-xs text-[#a1a1aa]">
               <li>School of Information & Comm. Tech (SoICT)</li>
               <li>School of Management (SoM)</li>
               <li>School of Biotechnology (SoBT)</li>
@@ -158,18 +158,18 @@ export const Footer: React.FC = () => {
 
           {/* Col 4: Creed & Chapters */}
           <div className="space-y-3">
-            <h4 className="font-locania text-xs font-bold text-[#c99c7b] uppercase tracking-widest">
+            <h4 className="font-locania text-xs font-bold text-[#2dd4bf] uppercase tracking-widest">
               University Motto
             </h4>
-            <div className="p-3 rounded-lg bg-[#1a1816] border border-[#383430] space-y-1.5">
-              <p className="font-locania text-sm text-[#f5f2ed] font-bold">
+            <div className="p-3 rounded-lg bg-[#0a0a0a] border border-[#27272a] space-y-1.5">
+              <p className="font-locania text-sm text-white font-bold">
                 Prajñā Śīla Karuṇā
               </p>
-              <p className="text-[11px] text-[#c99c7b] italic font-editorial">
+              <p className="text-[11px] text-[#2dd4bf] italic font-editorial">
                 "Wisdom to understand truth, moral integrity to live righteously, and boundless compassion for all beings."
               </p>
             </div>
-            <p className="text-[11px] text-[#a1958b] pt-1">
+            <p className="text-[11px] text-[#a1a1aa] pt-1">
               Active Regional Chapters: Delhi-NCR, Bengaluru, Mumbai, San Francisco Bay Area, London.
             </p>
           </div>
@@ -177,11 +177,11 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-[#383430] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#78716c]">
+        <div className="mt-12 pt-6 border-t border-[#27272a] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#a1a1aa]">
           <p>
             © {new Date().getFullYear()} Gautam Buddha University, Greater Noida. All rights reserved. AlumNet Portal.
           </p>
-          <div className="flex items-center gap-1 text-[11px]">
+          <div className="flex items-center gap-1 text-[11px] text-[#2dd4bf]">
             <span>Crafted for GBU Graduates worldwide</span>
           </div>
         </div>

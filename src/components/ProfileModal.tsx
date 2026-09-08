@@ -81,24 +81,24 @@ export const ProfileModal: React.FC = () => {
   );
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-200">
       <div 
         id="user-profile-modal-card"
-        className="relative w-full max-w-3xl bg-[#242220] rounded-xl shadow-2xl border border-[#383430] overflow-hidden my-6 flex flex-col max-h-[90vh]"
+        className="relative w-full max-w-3xl bg-[#0f0f12] rounded-xl shadow-2xl border border-[#27272a] overflow-hidden my-6 flex flex-col max-h-[90vh] text-white"
       >
         {/* Header */}
-        <div className="bg-[#1c1a18] text-[#f5f2ed] px-6 py-4 flex items-center justify-between border-b border-[#383430] shrink-0">
+        <div className="bg-[#18181b] text-white px-6 py-4 flex items-center justify-between border-b border-[#27272a] shrink-0">
           <div className="flex items-center gap-3">
             <img
               src={currentUser.avatarUrl}
               alt={currentUser.fullName}
-              className="w-10 h-10 rounded-full object-cover border border-[#383430]"
+              className="w-10 h-10 rounded-full object-cover border border-[#27272a]"
             />
             <div>
-              <h3 className="font-locania text-lg font-bold text-[#f5f2ed] tracking-wide">
+              <h3 className="font-locania text-lg font-bold text-white tracking-wide">
                 {currentUser.fullName}
               </h3>
-              <p className="text-[11px] text-[#c99c7b]">
+              <p className="text-[11px] text-[#2dd4bf] font-medium">
                 {currentUser.email} • {currentUser.role.toUpperCase()}
               </p>
             </div>
@@ -106,7 +106,7 @@ export const ProfileModal: React.FC = () => {
 
           <button
             onClick={() => setIsProfileModalOpen(false)}
-            className="w-8 h-8 rounded-full bg-[#2d2a27] hover:bg-[#383430] text-[#a1958b] hover:text-white flex items-center justify-center transition-colors cursor-pointer border border-[#383430]"
+            className="w-8 h-8 rounded-full bg-[#27272a] hover:bg-[#3f3f46] text-[#a1a1aa] hover:text-white flex items-center justify-center transition-colors cursor-pointer border border-[#3f3f46]"
             aria-label="Close"
           >
             <X className="w-5 h-5" />
@@ -114,14 +114,14 @@ export const ProfileModal: React.FC = () => {
         </div>
 
         {/* Tab Navigation with working moving right scroll button */}
-        <div className="border-b border-[#383430] bg-[#1c1a18] px-4 pt-2 shrink-0">
+        <div className="border-b border-[#27272a] bg-[#18181b] px-4 pt-2 shrink-0">
           <ScrollableOptionsBar idPrefix="profile-tabs" step={200} className="gap-1">
             <button
               onClick={() => setActiveTab('profile')}
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 cursor-pointer whitespace-nowrap shrink-0 ${
                 activeTab === 'profile'
-                  ? 'border-[#8d7d70] text-[#f5f2ed] bg-[#242220]'
-                  : 'border-transparent text-[#a1958b] hover:text-[#f5f2ed]'
+                  ? 'border-[#2dd4bf] text-[#2dd4bf] bg-[#0f0f12]'
+                  : 'border-transparent text-[#a1a1aa] hover:text-white'
               }`}
             >
               Edit Profile
@@ -131,8 +131,8 @@ export const ProfileModal: React.FC = () => {
               onClick={() => setActiveTab('connections')}
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 cursor-pointer flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                 activeTab === 'connections'
-                  ? 'border-[#8d7d70] text-[#f5f2ed] bg-[#242220]'
-                  : 'border-transparent text-[#a1958b] hover:text-[#f5f2ed]'
+                  ? 'border-[#2dd4bf] text-[#2dd4bf] bg-[#0f0f12]'
+                  : 'border-transparent text-[#a1a1aa] hover:text-white'
               }`}
             >
               <Users className="w-3.5 h-3.5" />
@@ -143,11 +143,11 @@ export const ProfileModal: React.FC = () => {
               onClick={() => setActiveTab('mentorships')}
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 cursor-pointer flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                 activeTab === 'mentorships'
-                  ? 'border-[#8d7d70] text-[#f5f2ed] bg-[#242220]'
-                  : 'border-transparent text-[#a1958b] hover:text-[#f5f2ed]'
+                  ? 'border-[#2dd4bf] text-[#2dd4bf] bg-[#0f0f12]'
+                  : 'border-transparent text-[#a1a1aa] hover:text-white'
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5 text-[#c99c7b]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#2dd4bf]" />
               <span>Mentorship Sessions ({userMentorships.length})</span>
             </button>
 
@@ -155,8 +155,8 @@ export const ProfileModal: React.FC = () => {
               onClick={() => setActiveTab('saved')}
               className={`px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors border-b-2 cursor-pointer flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                 activeTab === 'saved'
-                  ? 'border-[#8d7d70] text-[#f5f2ed] bg-[#242220]'
-                  : 'border-transparent text-[#a1958b] hover:text-[#f5f2ed]'
+                  ? 'border-[#2dd4bf] text-[#2dd4bf] bg-[#0f0f12]'
+                  : 'border-transparent text-[#a1a1aa] hover:text-white'
               }`}
             >
               <Bookmark className="w-3.5 h-3.5" />
@@ -173,61 +173,61 @@ export const ProfileModal: React.FC = () => {
             <form onSubmit={handleSaveProfile} className="space-y-4 text-xs">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Full Name</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Full Name</label>
                   <input
                     type="text"
                     required
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Current Role / Designation</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Current Role / Designation</label>
                   <input
                     type="text"
                     value={currentRole}
                     onChange={(e) => setCurrentRole(e.target.value)}
                     placeholder="e.g. Lead Engineer, Student"
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Company / Organization</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Company / Organization</label>
                   <input
                     type="text"
                     value={currentCompany}
                     onChange={(e) => setCurrentCompany(e.target.value)}
                     placeholder="e.g. Amazon, Gautam Buddha University"
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Graduation Batch Year</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Graduation Batch Year</label>
                   <input
                     type="number"
                     value={batchYear}
                     onChange={(e) => setBatchYear(Number(e.target.value))}
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">School / Faculty</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">School / Faculty</label>
                   <select
                     value={school}
                     onChange={(e) => setSchool(e.target.value as SchoolType)}
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                   >
                     {SCHOOL_OPTIONS.map((sch) => (
-                      <option key={sch} value={sch} className="bg-[#242220]">
+                      <option key={sch} value={sch} className="bg-[#18181b] text-white">
                         {sch}
                       </option>
                     ))}
@@ -235,48 +235,48 @@ export const ProfileModal: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Degree / Specialization</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Degree / Specialization</label>
                   <input
                     type="text"
                     value={degree}
                     onChange={(e) => setDegree(e.target.value)}
                     placeholder="e.g. B.Tech (CSE), MBA"
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block font-semibold text-[#d6cfc7] mb-1">Skills & Domains (comma separated)</label>
+                <label className="block font-semibold text-[#cbd5e1] mb-1">Skills & Domains (comma separated)</label>
                 <input
                   type="text"
                   value={skillsInput}
                   onChange={(e) => setSkillsInput(e.target.value)}
                   placeholder="e.g. React, Machine Learning, System Design"
-                  className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                  className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                 />
               </div>
 
               <div>
-                <label className="block font-semibold text-[#d6cfc7] mb-1">Professional Bio</label>
+                <label className="block font-semibold text-[#cbd5e1] mb-1">Professional Bio</label>
                 <textarea
                   rows={3}
                   value={bio}
                   onChange={(e) => setBio(e.target.value)}
                   placeholder="Tell your story, current research, or what guidance you seek..."
-                  className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                  className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                 />
               </div>
 
-              <div className="p-3 bg-[#1c1a18] border border-[#383430] rounded-md flex items-center gap-2">
+              <div className="p-3 bg-[#18181b] border border-[#27272a] rounded-md flex items-center gap-2">
                 <input
                   type="checkbox"
                   id="profile-mentor-toggle"
                   checked={isAvailableForMentoring}
                   onChange={(e) => setIsAvailableForMentoring(e.target.checked)}
-                  className="w-4 h-4 accent-[#8d7d70] rounded"
+                  className="w-4 h-4 accent-[#0d9488] rounded cursor-pointer"
                 />
-                <label htmlFor="profile-mentor-toggle" className="font-semibold text-[#f5f2ed] cursor-pointer">
+                <label htmlFor="profile-mentor-toggle" className="font-semibold text-white cursor-pointer">
                   Available as an active alumni mentor on AlumNet
                 </label>
               </div>
@@ -284,9 +284,9 @@ export const ProfileModal: React.FC = () => {
               <div className="pt-2 flex justify-end">
                 <button
                   type="submit"
-                  className="px-5 py-2 rounded-md bg-[#8d7d70] text-[#141414] font-bold uppercase tracking-wider hover:bg-[#a1958b] transition-colors flex items-center gap-1.5 cursor-pointer"
+                  className="px-5 py-2 rounded-md bg-[#0d9488] text-white font-bold uppercase tracking-wider hover:bg-[#0f766e] transition-colors flex items-center gap-1.5 cursor-pointer border border-[#0d9488] shadow-xs"
                 >
-                  <Save className="w-3.5 h-3.5 text-[#141414]" />
+                  <Save className="w-3.5 h-3.5 text-white" />
                   <span>Update Profile</span>
                 </button>
               </div>
@@ -297,25 +297,25 @@ export const ProfileModal: React.FC = () => {
           {activeTab === 'connections' && (
             <div className="space-y-4">
               {currentUser.pendingRequests.length > 0 && (
-                <div className="bg-[#1c1a18] border border-[#383430] p-4 rounded-xl">
-                  <h4 className="font-bold text-xs uppercase tracking-wider text-[#c99c7b] mb-2">
+                <div className="bg-[#18181b] border border-[#27272a] p-4 rounded-xl">
+                  <h4 className="font-bold text-xs uppercase tracking-wider text-[#2dd4bf] mb-2">
                     Pending Outgoing Requests ({currentUser.pendingRequests.length})
                   </h4>
-                  <p className="text-xs text-[#a1958b]">
+                  <p className="text-xs text-[#a1a1aa]">
                     You have sent connection requests to verified alumni. You will be notified upon confirmation.
                   </p>
                 </div>
               )}
 
-              <h4 className="font-locania text-base font-bold text-[#f5f2ed]">
+              <h4 className="font-locania text-base font-bold text-white">
                 Your Connected Alumni ({connectedAlumni.length})
               </h4>
 
               {connectedAlumni.length === 0 ? (
-                <div className="p-8 text-center bg-[#1c1a18] rounded-xl border border-[#383430]">
-                  <Users className="w-10 h-10 text-[#8d7d70] mx-auto mb-2" />
-                  <p className="text-xs font-bold text-[#f5f2ed]">No active connections yet</p>
-                  <p className="text-[11px] text-[#a1958b] mt-1">
+                <div className="p-8 text-center bg-[#18181b] rounded-xl border border-[#27272a]">
+                  <Users className="w-10 h-10 text-[#2dd4bf] mx-auto mb-2" />
+                  <p className="text-xs font-bold text-white">No active connections yet</p>
+                  <p className="text-[11px] text-[#a1a1aa] mt-1">
                     Explore the directory and tap "Connect" on alumni cards to build your network.
                   </p>
                 </div>
@@ -324,23 +324,23 @@ export const ProfileModal: React.FC = () => {
                   {connectedAlumni.map((a) => (
                     <div
                       key={a.id}
-                      className="p-3 rounded-xl border border-[#383430] bg-[#1a1816] flex items-center justify-between gap-3"
+                      className="p-3 rounded-xl border border-[#27272a] bg-[#18181b] shadow-2xs flex items-center justify-between gap-3"
                     >
                       <div className="flex items-center gap-2.5 min-w-0">
                         <img
                           src={a.avatarUrl}
                           alt={a.fullName}
-                          className="w-10 h-10 rounded-full object-cover border border-[#383430]"
+                          className="w-10 h-10 rounded-full object-cover border border-[#27272a]"
                         />
                         <div className="min-w-0">
-                          <p className="font-bold text-xs text-[#f5f2ed] truncate">{a.fullName}</p>
-                          <p className="text-[11px] text-[#c99c7b] truncate">{a.currentRole}</p>
-                          <p className="text-[10px] text-[#a1958b] truncate">{a.currentCompany}</p>
+                          <p className="font-bold text-xs text-white truncate">{a.fullName}</p>
+                          <p className="text-[11px] text-[#2dd4bf] font-medium truncate">{a.currentRole}</p>
+                          <p className="text-[10px] text-[#a1a1aa] truncate">{a.currentCompany}</p>
                         </div>
                       </div>
                       <button
                         onClick={() => setSelectedAlumniForDetail(a)}
-                        className="px-2.5 py-1 text-[11px] font-semibold rounded bg-[#2d2a27] hover:bg-[#383430] text-[#f5f2ed] border border-[#383430] shrink-0 transition-colors"
+                        className="px-2.5 py-1 text-[11px] font-semibold rounded bg-[#042f2e] hover:bg-[#0f766e] text-[#2dd4bf] hover:text-white border border-[#0f766e] shrink-0 transition-colors cursor-pointer"
                       >
                         Profile
                       </button>
@@ -354,15 +354,15 @@ export const ProfileModal: React.FC = () => {
           {/* TAB 3: MENTORSHIP SESSIONS */}
           {activeTab === 'mentorships' && (
             <div className="space-y-3">
-              <h4 className="font-locania text-base font-bold text-[#f5f2ed] mb-3">
+              <h4 className="font-locania text-base font-bold text-white mb-3">
                 Your Scheduled & Pending Mentorship Sessions
               </h4>
 
               {userMentorships.length === 0 ? (
-                <div className="p-8 text-center bg-[#1c1a18] rounded-xl border border-[#383430]">
-                  <Sparkles className="w-10 h-10 text-[#8d7d70] mx-auto mb-2" />
-                  <p className="text-xs font-bold text-[#f5f2ed]">No mentorship requests yet</p>
-                  <p className="text-[11px] text-[#a1958b] mt-1">
+                <div className="p-8 text-center bg-[#18181b] rounded-xl border border-[#27272a]">
+                  <Sparkles className="w-10 h-10 text-[#2dd4bf] mx-auto mb-2" />
+                  <p className="text-xs font-bold text-white">No mentorship requests yet</p>
+                  <p className="text-[11px] text-[#a1a1aa] mt-1">
                     Visit the Career Mentorship portal to book 1-on-1 sessions with senior alumni.
                   </p>
                 </div>
@@ -371,34 +371,34 @@ export const ProfileModal: React.FC = () => {
                   {userMentorships.map((req) => (
                     <div
                       key={req.id}
-                      className="p-4 rounded-xl border border-[#383430] bg-[#1a1816] space-y-2"
+                      className="p-4 rounded-xl border border-[#27272a] bg-[#18181b] shadow-2xs space-y-2"
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <Sparkles className="w-4 h-4 text-[#8d7d70]" />
-                          <h5 className="font-bold text-xs text-[#f5f2ed]">
+                          <Sparkles className="w-4 h-4 text-[#2dd4bf]" />
+                          <h5 className="font-bold text-xs text-white">
                             Session with {req.mentorName}
                           </h5>
                         </div>
                         <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase ${
-                          req.status === 'accepted' ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-800' : 'bg-amber-950/70 text-amber-300 border border-amber-800'
+                          req.status === 'accepted' ? 'bg-[#042f2e] text-[#2dd4bf] border border-[#0f766e]' : 'bg-amber-950/60 text-amber-300 border border-amber-800/60'
                         }`}>
                           {req.status}
                         </span>
                       </div>
 
-                      <p className="text-xs font-semibold text-[#c99c7b]">
+                      <p className="text-xs font-semibold text-[#2dd4bf]">
                         Topic: {req.topic}
                       </p>
 
-                      <div className="flex items-center gap-4 text-[11px] text-[#a1958b]">
+                      <div className="flex items-center gap-4 text-[11px] text-[#a1a1aa]">
                         <span className="flex items-center gap-1">
-                          <Clock className="w-3.5 h-3.5 text-[#8d7d70]" />
+                          <Clock className="w-3.5 h-3.5 text-[#2dd4bf]" />
                           <span>{req.requestedDate}</span>
                         </span>
                       </div>
 
-                      <p className="text-xs text-[#d6cfc7] italic bg-[#242220] p-2.5 rounded border border-[#383430]">
+                      <p className="text-xs text-[#cbd5e1] italic bg-[#0f0f12] p-2.5 rounded border border-[#27272a]">
                         "{req.message}"
                       </p>
                     </div>
@@ -411,15 +411,15 @@ export const ProfileModal: React.FC = () => {
           {/* TAB 4: SAVED BOOKMARKS */}
           {activeTab === 'saved' && (
             <div className="space-y-3">
-              <h4 className="font-locania text-base font-bold text-[#f5f2ed] mb-3">
+              <h4 className="font-locania text-base font-bold text-white mb-3">
                 Saved Alumni Profiles ({savedAlumni.length})
               </h4>
 
               {savedAlumni.length === 0 ? (
-                <div className="p-8 text-center bg-[#1c1a18] rounded-xl border border-[#383430]">
-                  <Bookmark className="w-10 h-10 text-[#8d7d70] mx-auto mb-2" />
-                  <p className="text-xs font-bold text-[#f5f2ed]">No saved alumni</p>
-                  <p className="text-[11px] text-[#a1958b] mt-1">
+                <div className="p-8 text-center bg-[#18181b] rounded-xl border border-[#27272a]">
+                  <Bookmark className="w-10 h-10 text-[#2dd4bf] mx-auto mb-2" />
+                  <p className="text-xs font-bold text-white">No saved alumni</p>
+                  <p className="text-[11px] text-[#a1a1aa] mt-1">
                     Bookmark alumni in the directory to quickly revisit their profiles later.
                   </p>
                 </div>
@@ -428,23 +428,23 @@ export const ProfileModal: React.FC = () => {
                   {savedAlumni.map((a) => (
                     <div
                       key={a.id}
-                      className="p-3 rounded-xl border border-[#383430] bg-[#1a1816] flex items-center justify-between gap-3"
+                      className="p-3 rounded-xl border border-[#27272a] bg-[#18181b] shadow-2xs flex items-center justify-between gap-3"
                     >
                       <div className="flex items-center gap-2.5 min-w-0">
                         <img
                           src={a.avatarUrl}
                           alt={a.fullName}
-                          className="w-10 h-10 rounded-full object-cover border border-[#383430]"
+                          className="w-10 h-10 rounded-full object-cover border border-[#27272a]"
                         />
                         <div className="min-w-0">
-                          <p className="font-bold text-xs text-[#f5f2ed] truncate">{a.fullName}</p>
-                          <p className="text-[11px] text-[#c99c7b] truncate">{a.currentRole}</p>
-                          <p className="text-[10px] text-[#a1958b] truncate">Batch {a.batchYear} • {a.currentCompany}</p>
+                          <p className="font-bold text-xs text-white truncate">{a.fullName}</p>
+                          <p className="text-[11px] text-[#2dd4bf] font-medium truncate">{a.currentRole}</p>
+                          <p className="text-[10px] text-[#a1a1aa] truncate">Batch {a.batchYear} • {a.currentCompany}</p>
                         </div>
                       </div>
                       <button
                         onClick={() => setSelectedAlumniForDetail(a)}
-                        className="px-2.5 py-1 text-[11px] font-bold rounded bg-[#8d7d70] hover:bg-[#a1958b] text-[#141414] shrink-0 transition-colors"
+                        className="px-2.5 py-1 text-[11px] font-bold rounded bg-[#0d9488] hover:bg-[#0f766e] text-white shrink-0 transition-colors border border-[#0d9488] shadow-xs cursor-pointer"
                       >
                         View
                       </button>

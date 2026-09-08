@@ -60,19 +60,19 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact-section" className="py-12 px-4 sm:px-6 lg:px-8 bg-[#1a1816]">
+    <section id="contact-section" className="py-12 px-4 sm:px-6 lg:px-8 bg-black text-white">
       <div className="container mx-auto max-w-7xl space-y-12">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1c1a18] text-[#c99c7b] text-xs font-semibold uppercase tracking-widest border border-[#383430]">
-            <Building className="w-3.5 h-3.5 text-[#c99c7b]" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#042f2e] text-[#2dd4bf] text-xs font-semibold uppercase tracking-widest border border-[#0f766e]">
+            <Building className="w-3.5 h-3.5 text-[#2dd4bf]" />
             <span>Official University Desk</span>
           </div>
-          <h2 className="font-locania text-3xl sm:text-4xl font-extrabold text-[#f5f2ed] tracking-tight">
+          <h2 className="font-locania text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Contact GBU Alumni Relations
           </h2>
-          <p className="text-xs sm:text-sm text-[#a1958b] font-editorial text-[17px]">
+          <p className="text-xs sm:text-sm text-[#cbd5e1] font-editorial text-[17px]">
             We are here to assist with chapter events, campus access passes, transcript support, and corporate collaborations.
           </p>
         </div>
@@ -82,19 +82,19 @@ export const ContactSection: React.FC = () => {
           
           {/* Left: University Details & Map preview */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="bg-[#242220] rounded-2xl border border-[#383430] p-6 shadow-xs space-y-6">
-              <h3 className="font-locania text-xl font-bold text-[#f5f2ed] border-b border-[#383430] pb-3">
+            <div className="bg-[#0f0f12] rounded-2xl border border-[#27272a] p-6 shadow-xs space-y-6">
+              <h3 className="font-locania text-xl font-bold text-white border-b border-[#27272a] pb-3">
                 Alumni Relations Office
               </h3>
 
-              <div className="space-y-4 text-xs text-[#d6cfc7]">
+              <div className="space-y-4 text-xs text-[#cbd5e1]">
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#1a1816] border border-[#383430] text-[#c99c7b] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#042f2e] border border-[#0f766e] text-[#2dd4bf] flex items-center justify-center shrink-0">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#f5f2ed] text-xs">Postal Address</h4>
-                    <p className="leading-relaxed text-[#a1958b] mt-0.5">
+                    <h4 className="font-bold text-white text-xs">Postal Address</h4>
+                    <p className="leading-relaxed text-[#a1a1aa] mt-0.5">
                       Alumni Relations Cell, Administrative Building<br />
                       Gautam Buddha University, Yamuna Expressway<br />
                       Greater Noida, Gautam Buddha Nagar, UP - 201312, India
@@ -103,36 +103,36 @@ export const ContactSection: React.FC = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#1a1816] border border-[#383430] text-[#c99c7b] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#042f2e] border border-[#0f766e] text-[#2dd4bf] flex items-center justify-center shrink-0">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#f5f2ed] text-xs">Direct Email</h4>
-                    <p className="font-mono text-[#c99c7b] mt-0.5">
+                    <h4 className="font-bold text-white text-xs">Direct Email</h4>
+                    <p className="font-mono text-[#2dd4bf] font-medium mt-0.5">
                       alumni@gbu.ac.in • registrar@gbu.ac.in
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#1a1816] border border-[#383430] text-[#c99c7b] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#042f2e] border border-[#0f766e] text-[#2dd4bf] flex items-center justify-center shrink-0">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#f5f2ed] text-xs">Helpline Phone</h4>
-                    <p className="font-mono text-[#c99c7b] mt-0.5">
+                    <h4 className="font-bold text-white text-xs">Helpline Phone</h4>
+                    <p className="font-mono text-[#2dd4bf] font-medium mt-0.5">
                       +91 120 234 4200 / 234 4224
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-[#1a1816] border border-[#383430] text-[#c99c7b] flex items-center justify-center shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#042f2e] border border-[#0f766e] text-[#2dd4bf] flex items-center justify-center shrink-0">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#f5f2ed] text-xs">Office Hours</h4>
-                    <p className="text-[#a1958b] mt-0.5">
+                    <h4 className="font-bold text-white text-xs">Office Hours</h4>
+                    <p className="text-[#a1a1aa] mt-0.5">
                       Monday to Friday: 09:30 AM - 05:30 PM IST<br />
                       Closed on Second Saturdays & University Holidays
                     </p>
@@ -141,12 +141,12 @@ export const ContactSection: React.FC = () => {
               </div>
 
               {/* Campus Pass Highlight card */}
-              <div className="p-3.5 bg-[#1a1816] rounded-xl border border-[#383430] text-xs space-y-1">
-                <div className="flex items-center gap-1.5 text-[#c99c7b] font-bold">
+              <div className="p-3.5 bg-[#18181b] rounded-xl border border-[#27272a] text-xs space-y-1">
+                <div className="flex items-center gap-1.5 text-[#2dd4bf] font-bold">
                   <GraduationCap className="w-4 h-4" />
                   <span>Campus Visit Protocols</span>
                 </div>
-                <p className="text-[11px] text-[#a1958b] leading-relaxed">
+                <p className="text-[11px] text-[#a1a1aa] leading-relaxed">
                   Visiting from out of town? Alumni may stay at the University International Guest House at subsidized institutional rates with advance notice.
                 </p>
               </div>
@@ -155,17 +155,17 @@ export const ContactSection: React.FC = () => {
 
           {/* Right: Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-[#242220] rounded-2xl border border-[#383430] p-6 sm:p-8 shadow-xs">
-              <h3 className="font-locania text-xl sm:text-2xl font-bold text-[#f5f2ed] mb-1">
+            <div className="bg-[#0f0f12] rounded-2xl border border-[#27272a] p-6 sm:p-8 shadow-xs">
+              <h3 className="font-locania text-xl sm:text-2xl font-bold text-white mb-1">
                 Send an Inquiry to the Alumni Cell
               </h3>
-              <p className="text-xs text-[#a1958b] mb-6 font-editorial text-[15px]">
+              <p className="text-xs text-[#a1a1aa] mb-6 font-editorial text-[15px]">
                 Whether you wish to sponsor a student initiative, organise a batch reunion, or verify records.
               </p>
 
               {submitted && (
-                <div className="p-4 bg-emerald-950/70 border border-emerald-800 rounded-xl text-xs text-emerald-300 flex items-center gap-2 mb-6">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+                <div className="p-4 bg-[#042f2e] border border-[#0f766e] rounded-xl text-xs text-[#2dd4bf] flex items-center gap-2 mb-6">
+                  <CheckCircle2 className="w-5 h-5 text-[#2dd4bf] shrink-0" />
                   <span>
                     Thank you! Your message has been safely recorded and routed to the GBU Alumni Relations team.
                   </span>
@@ -175,75 +175,75 @@ export const ContactSection: React.FC = () => {
               <form onSubmit={handleSubmit} className="space-y-4 text-xs">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block font-semibold text-[#d6cfc7] mb-1">Your Full Name *</label>
+                    <label className="block font-semibold text-[#cbd5e1] mb-1">Your Full Name *</label>
                     <input
                       type="text"
                       required
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="e.g. Alok Sharma"
-                      className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-semibold text-[#d6cfc7] mb-1">Email Address *</label>
+                    <label className="block font-semibold text-[#cbd5e1] mb-1">Email Address *</label>
                     <input
                       type="email"
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="alok.sharma@domain.com"
-                      className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block font-semibold text-[#d6cfc7] mb-1">Batch Year / Enrollment No</label>
+                    <label className="block font-semibold text-[#cbd5e1] mb-1">Batch Year / Enrollment No</label>
                     <input
                       type="text"
                       value={batch}
                       onChange={(e) => setBatch(e.target.value)}
                       placeholder="e.g. Batch 2018 or 14/ICT/030"
-                      className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                     />
                   </div>
 
                   <div>
-                    <label className="block font-semibold text-[#d6cfc7] mb-1">Subject Area</label>
+                    <label className="block font-semibold text-[#cbd5e1] mb-1">Subject Area</label>
                     <select
                       value={subject}
                       onChange={(e) => setSubject(e.target.value)}
-                      className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                     >
-                      <option value="Alumni Verification & Networking" className="bg-[#242220]">Alumni Verification & Networking</option>
-                      <option value="Campus Visit & Guest House Pass" className="bg-[#242220]">Campus Visit & Guest House Pass</option>
-                      <option value="Propose a Mentorship or Webinar" className="bg-[#242220]">Propose a Mentorship or Webinar</option>
-                      <option value="Annual Conclave Inquiry" className="bg-[#242220]">Annual Conclave Inquiry</option>
-                      <option value="Transcript & Academic Support" className="bg-[#242220]">Transcript & Academic Support</option>
+                      <option value="Alumni Verification & Networking" className="bg-[#18181b] text-white">Alumni Verification & Networking</option>
+                      <option value="Campus Visit & Guest House Pass" className="bg-[#18181b] text-white">Campus Visit & Guest House Pass</option>
+                      <option value="Propose a Mentorship or Webinar" className="bg-[#18181b] text-white">Propose a Mentorship or Webinar</option>
+                      <option value="Annual Conclave Inquiry" className="bg-[#18181b] text-white">Annual Conclave Inquiry</option>
+                      <option value="Transcript & Academic Support" className="bg-[#18181b] text-white">Transcript & Academic Support</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Message Details *</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Message Details *</label>
                   <textarea
                     rows={4}
                     required
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Write your detailed inquiry or note for the executive alumni committee..."
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-6 py-2.5 rounded-md bg-[#8d7d70] text-[#141414] font-bold uppercase tracking-wider hover:bg-[#a1958b] transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs"
+                  className="w-full sm:w-auto px-6 py-2.5 rounded-md bg-[#0d9488] text-white font-bold uppercase tracking-wider hover:bg-[#0f766e] transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xs border border-[#0d9488]"
                 >
-                  <Send className="w-4 h-4 text-[#141414]" />
+                  <Send className="w-4 h-4 text-white" />
                   <span>Send Message to GBU</span>
                 </button>
               </form>
@@ -253,10 +253,10 @@ export const ContactSection: React.FC = () => {
         </div>
 
         {/* Frequently Asked Questions */}
-        <div className="bg-[#242220] rounded-2xl border border-[#383430] p-6 sm:p-8 shadow-xs">
+        <div className="bg-[#0f0f12] rounded-2xl border border-[#27272a] p-6 sm:p-8 shadow-xs">
           <div className="flex items-center gap-2 mb-6">
-            <HelpCircle className="w-5 h-5 text-[#8d7d70]" />
-            <h3 className="font-locania text-xl sm:text-2xl font-bold text-[#f5f2ed]">
+            <HelpCircle className="w-5 h-5 text-[#2dd4bf]" />
+            <h3 className="font-locania text-xl sm:text-2xl font-bold text-white">
               Frequently Asked Questions by Alumni
             </h3>
           </div>
@@ -267,20 +267,20 @@ export const ContactSection: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="border border-[#383430] rounded-xl overflow-hidden transition-colors"
+                  className="border border-[#27272a] rounded-xl overflow-hidden transition-colors"
                 >
                   <button
                     onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-                    className="w-full p-4 text-left flex items-center justify-between gap-3 bg-[#1a1816] hover:bg-[#2d2a27] transition-colors cursor-pointer"
+                    className="w-full p-4 text-left flex items-center justify-between gap-3 bg-[#18181b] hover:bg-[#27272a] transition-colors cursor-pointer"
                   >
-                    <span className="font-semibold text-xs sm:text-sm text-[#f5f2ed]">
+                    <span className="font-semibold text-xs sm:text-sm text-white">
                       {faq.q}
                     </span>
-                    <ChevronDown className={`w-4 h-4 text-[#8d7d70] transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown className={`w-4 h-4 text-[#2dd4bf] transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                   </button>
 
                   {isOpen && (
-                    <div className="p-4 bg-[#242220] text-xs text-[#d6cfc7] leading-relaxed font-editorial text-[15px] border-t border-[#383430]">
+                    <div className="p-4 bg-[#0f0f12] text-xs text-[#cbd5e1] leading-relaxed font-editorial text-[15px] border-t border-[#27272a]">
                       {faq.a}
                     </div>
                   )}

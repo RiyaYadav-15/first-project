@@ -36,21 +36,21 @@ export const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section id="about-us-section" className="py-12 px-4 sm:px-6 lg:px-8 bg-[#1a1816]">
+    <section id="about-us-section" className="py-12 px-4 sm:px-6 lg:px-8 bg-black text-white">
       <div className="container mx-auto max-w-7xl space-y-16">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1c1a18] text-[#c99c7b] text-xs font-semibold uppercase tracking-widest border border-[#383430]">
-            <BookOpen className="w-3.5 h-3.5 text-[#c99c7b]" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#042f2e] text-[#2dd4bf] text-xs font-semibold uppercase tracking-widest border border-[#0f766e]">
+            <BookOpen className="w-3.5 h-3.5 text-[#2dd4bf]" />
             <span>University Heritage & Mission</span>
           </div>
 
-          <h2 className="font-locania text-3xl sm:text-4xl font-extrabold text-[#f5f2ed] tracking-tight">
+          <h2 className="font-locania text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             About Gautam Buddha University & AlumNet
           </h2>
 
-          <p className="text-xs sm:text-sm text-[#c99c7b] font-editorial text-[17px] sm:text-[19px] leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#cbd5e1] font-editorial text-[17px] sm:text-[19px] leading-relaxed">
             Established under Uttar Pradesh Act (9) of 2002, Gautam Buddha University represents a vibrant confluence of ancient wisdom and modern scientific research across a magnificent 511-acre campus.
           </p>
         </div>
@@ -59,55 +59,55 @@ export const AboutSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           <div className="lg:col-span-6 space-y-5">
-            <div className="border-l-3 border-[#8d7d70] pl-4">
-              <h3 className="font-locania text-2xl font-bold text-[#f5f2ed] leading-snug">
+            <div className="border-l-4 border-[#0d9488] pl-4">
+              <h3 className="font-locania text-2xl font-bold text-white leading-snug">
                 Prajñā, Śīla, Karuṇā
               </h3>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#c99c7b] mt-0.5">
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#2dd4bf] mt-0.5">
                 The Guiding Creed of Gautam Buddha University
               </p>
             </div>
 
-            <p className="text-xs sm:text-sm text-[#d6cfc7] leading-relaxed font-editorial text-[16px]">
+            <p className="text-xs sm:text-sm text-[#cbd5e1] leading-relaxed font-editorial text-[16px]">
               Gautam Buddha University was conceived as a seat of higher learning that inculcates holistic knowledge with deep moral ethics. Its sprawling campus along the Yamuna Expressway in Greater Noida features world-class sports stadiums, state-of-the-art computational laboratories, and the tranquil Mahatma Jyotiba Phule Dhyan Kendra.
             </p>
 
-            <p className="text-xs sm:text-sm text-[#d6cfc7] leading-relaxed font-editorial text-[16px]">
-              <strong className="text-[#f5f2ed]">AlumNet</strong> is the designated institutional platform connecting more than 5,800 alumni across four continents. It empowers graduates to give back, advise current undergraduates, sponsor innovation fellowships, and attend regional homecoming reunions.
+            <p className="text-xs sm:text-sm text-[#cbd5e1] leading-relaxed font-editorial text-[16px]">
+              <strong className="text-white">AlumNet</strong> is the designated institutional platform connecting more than 5,800 alumni across four continents. It empowers graduates to give back, advise current undergraduates, sponsor innovation fellowships, and attend regional homecoming reunions.
             </p>
 
             <div className="grid grid-cols-2 gap-3 pt-2">
-              <div className="p-3.5 bg-[#242220] rounded-xl border border-[#383430] shadow-2xs">
-                <HeartHandshake className="w-5 h-5 text-[#c99c7b] mb-1.5" />
-                <h4 className="font-bold text-xs text-[#f5f2ed]">Lifelong Fraternity</h4>
-                <p className="text-[11px] text-[#a1958b] mt-0.5">Continuous peer support across all industries.</p>
+              <div className="p-3.5 bg-[#0f0f12] rounded-xl border border-[#27272a] shadow-2xs">
+                <HeartHandshake className="w-5 h-5 text-[#2dd4bf] mb-1.5" />
+                <h4 className="font-bold text-xs text-white">Lifelong Fraternity</h4>
+                <p className="text-[11px] text-[#a1a1aa] mt-0.5">Continuous peer support across all industries.</p>
               </div>
 
-              <div className="p-3.5 bg-[#242220] rounded-xl border border-[#383430] shadow-2xs">
-                <Compass className="w-5 h-5 text-[#c99c7b] mb-1.5" />
-                <h4 className="font-bold text-xs text-[#f5f2ed]">Direct Student Guidance</h4>
-                <p className="text-[11px] text-[#a1958b] mt-0.5">Mentorship that bridges classroom to corporate.</p>
+              <div className="p-3.5 bg-[#0f0f12] rounded-xl border border-[#27272a] shadow-2xs">
+                <Compass className="w-5 h-5 text-[#2dd4bf] mb-1.5" />
+                <h4 className="font-bold text-xs text-white">Direct Student Guidance</h4>
+                <p className="text-[11px] text-[#a1a1aa] mt-0.5">Mentorship that bridges classroom to corporate.</p>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#383430] bg-[#1c1a18]">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#27272a] bg-zinc-950">
               <img
                 src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1000&auto=format&fit=crop&q=80"
                 alt="Gautam Buddha University Campus"
-                className="w-full h-80 sm:h-96 object-cover opacity-80 hover:scale-105 transition-transform duration-700"
+                className="w-full h-80 sm:h-96 object-cover opacity-85 hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#141414]/95 via-[#141414]/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent"></div>
               
               <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-[#c99c7b]">
+                <span className="text-[11px] font-bold uppercase tracking-widest text-[#2dd4bf]">
                   511-Acre Eco-Campus
                 </span>
-                <h4 className="font-locania text-xl font-bold text-[#f5f2ed]">
+                <h4 className="font-locania text-xl font-bold text-white">
                   Greater Noida, Uttar Pradesh, India
                 </h4>
-                <p className="text-xs text-[#d6cfc7]">
+                <p className="text-xs text-zinc-300">
                   Equipped with Sarvapalli Radhakrishnan Central Library, Olympic-grade sports complex, and specialized research centers.
                 </p>
               </div>
@@ -118,11 +118,11 @@ export const AboutSection: React.FC = () => {
 
         {/* Academic Faculties & Schools Showcase */}
         <div>
-          <div className="mb-6 pb-3 border-b border-[#383430]">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#c99c7b]">
+          <div className="mb-6 pb-3 border-b border-[#27272a]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2dd4bf]">
               Academic Pillars
             </span>
-            <h3 className="font-locania text-2xl font-bold text-[#f5f2ed]">
+            <h3 className="font-locania text-2xl font-bold text-white">
               The 8 Schools of Gautam Buddha University
             </h3>
           </div>
@@ -131,22 +131,22 @@ export const AboutSection: React.FC = () => {
             {schools.map((s, idx) => (
               <div
                 key={idx}
-                className="bg-[#242220] p-4 rounded-xl border border-[#383430] hover:border-[#8d7d70] shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                className="bg-[#0f0f12] p-4 rounded-xl border border-[#27272a] hover:border-[#0d9488]/60 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
               >
                 <div>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#1a1816] text-[#c99c7b] border border-[#383430] inline-block mb-2">
+                  <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-[#042f2e] text-[#2dd4bf] border border-[#0f766e] inline-block mb-2">
                     {s.code}
                   </span>
-                  <h4 className="font-locania text-sm font-bold text-[#f5f2ed] leading-snug mb-1.5">
+                  <h4 className="font-locania text-sm font-bold text-white leading-snug mb-1.5">
                     {s.name}
                   </h4>
-                  <p className="text-[11px] text-[#a1958b] leading-relaxed">
+                  <p className="text-[11px] text-[#a1a1aa] leading-relaxed">
                     {s.focus}
                   </p>
                 </div>
                 <button
                   onClick={() => setActiveTab('directory')}
-                  className="mt-3 pt-2 border-t border-[#383430] text-[11px] font-semibold text-[#c99c7b] hover:underline flex items-center justify-between cursor-pointer"
+                  className="mt-3 pt-2 border-t border-[#27272a] text-[11px] font-semibold text-[#2dd4bf] hover:underline flex items-center justify-between cursor-pointer"
                 >
                   <span>View Alumni</span>
                   <ChevronRight className="w-3 h-3" />
@@ -157,17 +157,17 @@ export const AboutSection: React.FC = () => {
         </div>
 
         {/* Regional Chapters Grid */}
-        <div className="bg-[#242220] p-8 rounded-2xl border border-[#383430] shadow-xs">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3 border-b border-[#383430]">
+        <div className="bg-[#0f0f12] p-8 rounded-2xl border border-[#27272a] shadow-xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3 border-b border-[#27272a]">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#c99c7b]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#2dd4bf]">
                 Global Presence
               </span>
-              <h3 className="font-locania text-2xl font-bold text-[#f5f2ed]">
+              <h3 className="font-locania text-2xl font-bold text-white">
                 Alumni Chapters & Regional Hubs
               </h3>
             </div>
-            <span className="text-xs text-[#a1958b]">
+            <span className="text-xs text-[#a1a1aa]">
               Active local networks organizing regular meetups and career fairs
             </span>
           </div>
@@ -176,18 +176,18 @@ export const AboutSection: React.FC = () => {
             {chapters.map((ch, idx) => (
               <div
                 key={idx}
-                className="p-4 rounded-xl bg-[#1a1816] border border-[#383430] space-y-1.5"
+                className="p-4 rounded-xl bg-[#18181b] border border-[#27272a] space-y-1.5 shadow-2xs"
               >
-                <div className="w-7 h-7 rounded-md bg-[#2d2a27] text-[#c99c7b] flex items-center justify-center mb-2">
+                <div className="w-7 h-7 rounded-md bg-[#042f2e] text-[#2dd4bf] border border-[#0f766e] flex items-center justify-center mb-2">
                   <Globe2 className="w-3.5 h-3.5" />
                 </div>
-                <h4 className="font-locania text-sm font-bold text-[#f5f2ed]">
+                <h4 className="font-locania text-sm font-bold text-white">
                   {ch.city}
                 </h4>
-                <p className="text-[11px] text-[#c99c7b] font-medium">
+                <p className="text-[11px] text-[#2dd4bf] font-semibold">
                   {ch.members}
                 </p>
-                <p className="text-[10.5px] text-[#a1958b] truncate">
+                <p className="text-[10.5px] text-[#a1a1aa] truncate">
                   Convenor: {ch.convenor}
                 </p>
               </div>

@@ -92,71 +92,71 @@ export const WelcomeAuthModal: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-200">
       <div 
         id="welcome-auth-card"
-        className="relative w-full max-w-4xl bg-[#242220] rounded-xl shadow-2xl border border-[#383430] overflow-hidden my-6 flex flex-col md:flex-row"
+        className="relative w-full max-w-4xl bg-[#0f0f12] rounded-xl shadow-2xl border border-[#27272a] overflow-hidden my-6 flex flex-col md:flex-row text-white"
       >
         {/* Close Button */}
         <button
           id="close-auth-modal"
           onClick={() => setIsAuthModalOpen(false)}
-          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-[#2d2a27] hover:bg-[#383430] text-[#a1958b] hover:text-[#f5f2ed] flex items-center justify-center transition-colors cursor-pointer border border-[#383430]"
+          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-[#27272a] hover:bg-[#3f3f46] text-[#a1a1aa] hover:text-white flex items-center justify-center transition-colors cursor-pointer border border-[#3f3f46]"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Left Side: Welcome Proclamation & University Heritage */}
-        <div className="w-full md:w-5/12 bg-gradient-to-b from-[#1c1a18] via-[#242220] to-[#1a1816] text-[#f5f2ed] p-8 flex flex-col justify-between relative overflow-hidden border-b md:border-b-0 md:border-r border-[#383430]">
+        <div className="w-full md:w-5/12 bg-gradient-to-b from-[#18181b] via-[#0f0f12] to-[#18181b] text-white p-8 flex flex-col justify-between relative overflow-hidden border-b md:border-b-0 md:border-r border-[#27272a]">
           {/* Subtle decorative watermark */}
-          <div className="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-[#c99c7b]/5 blur-2xl pointer-events-none"></div>
+          <div className="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-[#2dd4bf]/5 blur-2xl pointer-events-none"></div>
 
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="p-2 rounded-lg bg-[#2d2a27] text-[#c99c7b] border border-[#3e3833]">
+              <span className="p-2 rounded-lg bg-[#042f2e] text-[#2dd4bf] border border-[#0f766e]">
                 <GraduationCap className="w-6 h-6" />
               </span>
-              <span className="font-locania text-xs tracking-widest text-[#c99c7b] uppercase font-bold">
+              <span className="font-locania text-xs tracking-widest text-[#2dd4bf] uppercase font-bold">
                 AlumNet Portal
               </span>
             </div>
 
-            <h2 className="font-locania text-2xl sm:text-3xl font-bold text-[#f5f2ed] tracking-wide leading-tight mb-3">
+            <h2 className="font-locania text-2xl sm:text-3xl font-bold text-white tracking-wide leading-tight mb-3">
               Gautam Buddha University
             </h2>
 
-            <p className="text-xs text-[#c99c7b] italic font-editorial text-[14px] leading-relaxed mb-4">
+            <p className="text-xs text-[#2dd4bf] font-bold italic font-editorial text-[14px] leading-relaxed mb-4">
               "Prajñā Śīla Karuṇā — Wisdom, Moral Integrity, and Compassion"
             </p>
 
-            <p className="text-xs text-[#a1958b] leading-relaxed font-light mb-6">
+            <p className="text-xs text-[#a1a1aa] leading-relaxed font-normal mb-6">
               Welcome to the official alumni ecosystem. Connect with thousands of GBU graduates worldwide across technology, governance, sciences, consulting, and entrepreneurship.
             </p>
 
-            <div className="space-y-3 pt-3 border-t border-[#383430]">
-              <div className="flex items-center gap-2.5 text-xs text-[#d6cfc7]">
-                <CheckCircle2 className="w-4 h-4 text-[#c99c7b] shrink-0" />
+            <div className="space-y-3 pt-3 border-t border-[#27272a]">
+              <div className="flex items-center gap-2.5 text-xs text-[#cbd5e1]">
+                <CheckCircle2 className="w-4 h-4 text-[#2dd4bf] shrink-0" />
                 <span>Verified Alumni Directory with School Filtering</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-[#d6cfc7]">
-                <CheckCircle2 className="w-4 h-4 text-[#c99c7b] shrink-0" />
+              <div className="flex items-center gap-2.5 text-xs text-[#cbd5e1]">
+                <CheckCircle2 className="w-4 h-4 text-[#2dd4bf] shrink-0" />
                 <span>Career Mentorship Portal for Graduates</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-[#d6cfc7]">
-                <CheckCircle2 className="w-4 h-4 text-[#c99c7b] shrink-0" />
+              <div className="flex items-center gap-2.5 text-xs text-[#cbd5e1]">
+                <CheckCircle2 className="w-4 h-4 text-[#2dd4bf] shrink-0" />
                 <span>Personalized Interest & Skills Matchmaking</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-[#d6cfc7]">
-                <CheckCircle2 className="w-4 h-4 text-[#c99c7b] shrink-0" />
+              <div className="flex items-center gap-2.5 text-xs text-[#cbd5e1]">
+                <CheckCircle2 className="w-4 h-4 text-[#2dd4bf] shrink-0" />
                 <span>Annual Conclaves & Chapter Reunions</span>
               </div>
             </div>
           </div>
 
           {/* 1-Click Quick Demo Login Pill */}
-          <div className="mt-8 pt-4 border-t border-[#383430]">
-            <p className="text-[11px] text-[#c99c7b] uppercase font-bold tracking-wider mb-2">
+          <div className="mt-8 pt-4 border-t border-[#27272a]">
+            <p className="text-[11px] text-[#2dd4bf] uppercase font-bold tracking-wider mb-2">
               Instant Preview Access
             </p>
             <div className="grid grid-cols-2 gap-2">
@@ -164,7 +164,7 @@ export const WelcomeAuthModal: React.FC = () => {
                 id="demo-login-student"
                 type="button"
                 onClick={() => handleQuickDemoLogin('student')}
-                className="px-2.5 py-1.5 bg-[#2d2a27] hover:bg-[#383430] text-[#f5f2ed] text-[11px] font-medium rounded border border-[#3e3833] text-center transition-colors cursor-pointer"
+                className="px-2.5 py-1.5 bg-[#18181b] hover:bg-[#042f2e] text-[#2dd4bf] hover:text-white text-[11px] font-semibold rounded border border-[#27272a] hover:border-[#0f766e] text-center transition-colors cursor-pointer shadow-2xs"
               >
                 Log in as Student
               </button>
@@ -172,7 +172,7 @@ export const WelcomeAuthModal: React.FC = () => {
                 id="demo-login-alumni"
                 type="button"
                 onClick={() => handleQuickDemoLogin('alumni')}
-                className="px-2.5 py-1.5 bg-[#2d2a27] hover:bg-[#383430] text-[#f5f2ed] text-[11px] font-medium rounded border border-[#3e3833] text-center transition-colors cursor-pointer"
+                className="px-2.5 py-1.5 bg-[#18181b] hover:bg-[#042f2e] text-[#2dd4bf] hover:text-white text-[11px] font-semibold rounded border border-[#27272a] hover:border-[#0f766e] text-center transition-colors cursor-pointer shadow-2xs"
               >
                 Log in as Alumnus
               </button>
@@ -181,9 +181,9 @@ export const WelcomeAuthModal: React.FC = () => {
         </div>
 
         {/* Right Side: Tabbed Login & Sign Up Form */}
-        <div className="w-full md:w-7/12 p-6 sm:p-8 bg-[#242220] flex flex-col justify-center">
+        <div className="w-full md:w-7/12 p-6 sm:p-8 bg-[#0f0f12] text-white flex flex-col justify-center">
           {/* Form Header / Tabs */}
-          <div className="flex items-center justify-between border-b border-[#383430] pb-3 mb-6">
+          <div className="flex items-center justify-between border-b border-[#27272a] pb-3 mb-6">
             <div className="flex gap-4">
               <button
                 id="tab-btn-signin"
@@ -191,8 +191,8 @@ export const WelcomeAuthModal: React.FC = () => {
                 onClick={() => setAuthMode('signin')}
                 className={`text-sm font-bold pb-2 transition-all cursor-pointer font-locania tracking-wider uppercase border-b-2 ${
                   authMode === 'signin'
-                    ? 'border-[#8d7d70] text-[#f5f2ed]'
-                    : 'border-transparent text-[#78716c] hover:text-[#f5f2ed]'
+                    ? 'border-[#2dd4bf] text-[#2dd4bf]'
+                    : 'border-transparent text-[#a1a1aa] hover:text-white'
                 }`}
               >
                 Sign In
@@ -203,15 +203,15 @@ export const WelcomeAuthModal: React.FC = () => {
                 onClick={() => setAuthMode('signup')}
                 className={`text-sm font-bold pb-2 transition-all cursor-pointer font-locania tracking-wider uppercase border-b-2 ${
                   authMode === 'signup'
-                    ? 'border-[#8d7d70] text-[#f5f2ed]'
-                    : 'border-transparent text-[#78716c] hover:text-[#f5f2ed]'
+                    ? 'border-[#2dd4bf] text-[#2dd4bf]'
+                    : 'border-transparent text-[#a1a1aa] hover:text-white'
                 }`}
               >
                 Create Account
               </button>
             </div>
 
-            <span className="text-[11px] text-[#78716c] hidden sm:inline">
+            <span className="text-[11px] text-[#a1a1aa] hidden sm:inline">
               {authMode === 'signin' ? 'Welcome back!' : 'Join the alumni network'}
             </span>
           </div>
@@ -220,11 +220,11 @@ export const WelcomeAuthModal: React.FC = () => {
           {authMode === 'signin' ? (
             <form onSubmit={handleSignInSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs font-semibold text-[#d6cfc7] mb-1.5">
+                <label className="block text-xs font-semibold text-[#cbd5e1] mb-1.5">
                   Email Address
                 </label>
                 <div className="relative">
-                  <Mail className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#78716c]" />
+                  <Mail className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#71717a]" />
                   <input
                     id="signin-email"
                     type="email"
@@ -232,33 +232,33 @@ export const WelcomeAuthModal: React.FC = () => {
                     value={signInEmail}
                     onChange={(e) => setSignInEmail(e.target.value)}
                     placeholder="e.g. aditi.sharma.gbu@alumni.ac.in or personal email"
-                    className="w-full pl-9 pr-3 py-2 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full pl-9 pr-3 py-2 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
 
               <div>
                 <div className="flex justify-between items-center mb-1.5">
-                  <label className="block text-xs font-semibold text-[#d6cfc7]">
+                  <label className="block text-xs font-semibold text-[#cbd5e1]">
                     Password
                   </label>
                   <button
                     type="button"
                     onClick={() => showToast('Password reset link sent to registered email.')}
-                    className="text-[11px] text-[#c99c7b] hover:underline"
+                    className="text-[11px] text-[#2dd4bf] font-medium hover:underline cursor-pointer"
                   >
                     Forgot password?
                   </button>
                 </div>
                 <div className="relative">
-                  <Lock className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#78716c]" />
+                  <Lock className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#71717a]" />
                   <input
                     id="signin-password"
                     type="password"
                     value={signInPassword}
                     onChange={(e) => setSignInPassword(e.target.value)}
                     placeholder="••••••••"
-                    className="w-full pl-9 pr-3 py-2 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full pl-9 pr-3 py-2 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
@@ -267,15 +267,15 @@ export const WelcomeAuthModal: React.FC = () => {
                 <button
                   id="submit-signin-btn"
                   type="submit"
-                  className="w-full py-2.5 rounded-md bg-[#8d7d70] text-[#141414] text-xs font-bold uppercase tracking-wider hover:bg-[#a1958b] transition-colors shadow-xs cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full py-2.5 rounded-md bg-[#0d9488] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#0f766e] transition-colors shadow-xs cursor-pointer flex items-center justify-center gap-2 border border-[#0d9488]"
                 >
                   <span>Sign In to AlumNet</span>
-                  <ArrowRight className="w-4 h-4 text-[#141414]" />
+                  <ArrowRight className="w-4 h-4 text-white" />
                 </button>
               </div>
 
-              <div className="p-3 bg-[#1c1a18] rounded-lg border border-[#383430] text-[11px] text-[#a1958b] flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 shrink-0 text-[#c99c7b]" />
+              <div className="p-3 bg-[#18181b] rounded-lg border border-[#27272a] text-[11px] text-[#a1a1aa] flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 shrink-0 text-[#2dd4bf]" />
                 <span>
                   GBU Roll Numbers and official institutional credentials are authenticated securely.
                 </span>
@@ -286,11 +286,11 @@ export const WelcomeAuthModal: React.FC = () => {
             <form onSubmit={handleSignUpSubmit} className="space-y-3.5 max-h-[60vh] overflow-y-auto pr-1">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                  <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                     Full Name *
                   </label>
                   <div className="relative">
-                    <User className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#78716c]" />
+                    <User className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#71717a]" />
                     <input
                       id="signup-name"
                       type="text"
@@ -298,17 +298,17 @@ export const WelcomeAuthModal: React.FC = () => {
                       value={fullName}
                       onChange={(e) => setFullName(e.target.value)}
                       placeholder="e.g. Aditi Sharma"
-                      className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                  <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                     Email Address *
                   </label>
                   <div className="relative">
-                    <Mail className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#78716c]" />
+                    <Mail className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#71717a]" />
                     <input
                       id="signup-email"
                       type="email"
@@ -316,7 +316,7 @@ export const WelcomeAuthModal: React.FC = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="name@alumni.gbu.ac.in"
-                      className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                     />
                   </div>
                 </div>
@@ -324,7 +324,7 @@ export const WelcomeAuthModal: React.FC = () => {
 
               {/* Role Toggle */}
               <div>
-                <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                   I am a
                 </label>
                 <div className="grid grid-cols-2 gap-2">
@@ -333,8 +333,8 @@ export const WelcomeAuthModal: React.FC = () => {
                     onClick={() => setRole('alumni')}
                     className={`py-1.5 text-xs font-medium rounded border text-center transition-colors cursor-pointer ${
                       role === 'alumni'
-                        ? 'bg-[#8d7d70] text-[#141414] font-bold border-[#8d7d70]'
-                        : 'bg-[#1a1816] text-[#a1958b] border-[#383430] hover:bg-[#2d2a27]'
+                        ? 'bg-[#0d9488] text-white font-bold border-[#0d9488]'
+                        : 'bg-[#18181b] text-[#a1a1aa] border-[#27272a] hover:bg-[#27272a]'
                     }`}
                   >
                     Graduated Alumnus
@@ -344,8 +344,8 @@ export const WelcomeAuthModal: React.FC = () => {
                     onClick={() => setRole('student')}
                     className={`py-1.5 text-xs font-medium rounded border text-center transition-colors cursor-pointer ${
                       role === 'student'
-                        ? 'bg-[#8d7d70] text-[#141414] font-bold border-[#8d7d70]'
-                        : 'bg-[#1a1816] text-[#a1958b] border-[#383430] hover:bg-[#2d2a27]'
+                        ? 'bg-[#0d9488] text-white font-bold border-[#0d9488]'
+                        : 'bg-[#18181b] text-[#a1a1aa] border-[#27272a] hover:bg-[#27272a]'
                     }`}
                   >
                     Current Student
@@ -355,17 +355,17 @@ export const WelcomeAuthModal: React.FC = () => {
 
               {/* School selection */}
               <div>
-                <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                   GBU School / Faculty *
                 </label>
                 <select
                   id="signup-school"
                   value={school}
                   onChange={(e) => setSchool(e.target.value as SchoolType)}
-                  className="w-full px-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                  className="w-full px-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                 >
                   {SCHOOL_OPTIONS.map((sch) => (
-                    <option key={sch} value={sch} className="bg-[#242220]">
+                    <option key={sch} value={sch} className="bg-[#18181b] text-white">
                       {sch}
                     </option>
                   ))}
@@ -375,7 +375,7 @@ export const WelcomeAuthModal: React.FC = () => {
               {/* Batch & Degree */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                  <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                     Graduation Year / Batch
                   </label>
                   <input
@@ -385,11 +385,11 @@ export const WelcomeAuthModal: React.FC = () => {
                     max="2030"
                     value={batchYear}
                     onChange={(e) => setBatchYear(Number(e.target.value))}
-                    className="w-full px-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                  <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                     Degree / Branch
                   </label>
                   <input
@@ -398,7 +398,7 @@ export const WelcomeAuthModal: React.FC = () => {
                     value={degree}
                     onChange={(e) => setDegree(e.target.value)}
                     placeholder="e.g. B.Tech (CSE), MBA, Ph.D"
-                    className="w-full px-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
@@ -406,7 +406,7 @@ export const WelcomeAuthModal: React.FC = () => {
               {/* Career Info */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                  <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                     Current Role / Designation
                   </label>
                   <input
@@ -415,22 +415,22 @@ export const WelcomeAuthModal: React.FC = () => {
                     value={currentRole}
                     onChange={(e) => setCurrentRole(e.target.value)}
                     placeholder="e.g. Product Manager, IAS Officer"
-                    className="w-full px-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                  <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                     Company / Organization
                   </label>
                   <div className="relative">
-                    <Building2 className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#78716c]" />
+                    <Building2 className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#71717a]" />
                     <input
                       id="signup-company"
                       type="text"
                       value={currentCompany}
                       onChange={(e) => setCurrentCompany(e.target.value)}
                       placeholder="e.g. Microsoft, Govt of India"
-                      className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                      className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                     />
                   </div>
                 </div>
@@ -438,11 +438,11 @@ export const WelcomeAuthModal: React.FC = () => {
 
               {/* Password */}
               <div>
-                <label className="block text-[11px] font-semibold text-[#d6cfc7] mb-1">
+                <label className="block text-[11px] font-semibold text-[#cbd5e1] mb-1">
                   Create Password *
                 </label>
                 <div className="relative">
-                  <Lock className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#78716c]" />
+                  <Lock className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2 text-[#71717a]" />
                   <input
                     id="signup-password"
                     type="password"
@@ -450,22 +450,22 @@ export const WelcomeAuthModal: React.FC = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Minimum 6 characters"
-                    className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full pl-8 pr-2.5 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
 
               {/* Open to Mentoring Checkbox */}
               {role === 'alumni' && (
-                <div className="flex items-center gap-2 p-2 bg-[#1c1a18] border border-[#383430] rounded-md">
+                <div className="flex items-center gap-2 p-2 bg-[#18181b] border border-[#27272a] rounded-md">
                   <input
                     id="signup-mentor-checkbox"
                     type="checkbox"
                     checked={isAvailableForMentoring}
                     onChange={(e) => setIsAvailableForMentoring(e.target.checked)}
-                    className="w-4 h-4 accent-[#8d7d70] rounded"
+                    className="w-4 h-4 accent-[#0d9488] rounded cursor-pointer"
                   />
-                  <label htmlFor="signup-mentor-checkbox" className="text-xs text-[#d6cfc7] font-medium cursor-pointer">
+                  <label htmlFor="signup-mentor-checkbox" className="text-xs text-white font-medium cursor-pointer">
                     I am willing to mentor GBU graduates and juniors on career tracks
                   </label>
                 </div>
@@ -475,9 +475,9 @@ export const WelcomeAuthModal: React.FC = () => {
                 <button
                   id="submit-signup-btn"
                   type="submit"
-                  className="w-full py-2.5 rounded-md bg-[#8d7d70] text-[#141414] text-xs font-bold uppercase tracking-wider hover:bg-[#a1958b] transition-colors shadow-xs cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full py-2.5 rounded-md bg-[#0d9488] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#0f766e] transition-colors shadow-xs cursor-pointer flex items-center justify-center gap-2 border border-[#0d9488]"
                 >
-                  <Sparkles className="w-4 h-4 text-[#141414]" />
+                  <Sparkles className="w-4 h-4 text-white" />
                   <span>Register & Join AlumNet</span>
                 </button>
               </div>
@@ -489,7 +489,7 @@ export const WelcomeAuthModal: React.FC = () => {
             <button
               type="button"
               onClick={() => setIsAuthModalOpen(false)}
-              className="text-xs text-[#78716c] hover:text-[#f5f2ed] underline decoration-dotted cursor-pointer"
+              className="text-xs text-[#a1a1aa] hover:text-[#2dd4bf] underline decoration-dotted cursor-pointer"
             >
               Continue exploring as guest visitor
             </button>

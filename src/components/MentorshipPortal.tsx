@@ -74,13 +74,13 @@ export const MentorshipPortal: React.FC = () => {
 
   const getTrackIcon = (iconName: string) => {
     switch (iconName) {
-      case 'Code2': return <Code2 className="w-5 h-5 text-[#c99c7b]" />;
-      case 'Briefcase': return <Briefcase className="w-5 h-5 text-[#c99c7b]" />;
-      case 'Landmark': return <Landmark className="w-5 h-5 text-[#c99c7b]" />;
-      case 'Dna': return <Dna className="w-5 h-5 text-[#c99c7b]" />;
-      case 'Scale': return <Scale className="w-5 h-5 text-[#c99c7b]" />;
-      case 'Rocket': return <Rocket className="w-5 h-5 text-[#c99c7b]" />;
-      default: return <Sparkles className="w-5 h-5 text-[#c99c7b]" />;
+      case 'Code2': return <Code2 className="w-5 h-5 text-[#2dd4bf]" />;
+      case 'Briefcase': return <Briefcase className="w-5 h-5 text-[#2dd4bf]" />;
+      case 'Landmark': return <Landmark className="w-5 h-5 text-[#2dd4bf]" />;
+      case 'Dna': return <Dna className="w-5 h-5 text-[#2dd4bf]" />;
+      case 'Scale': return <Scale className="w-5 h-5 text-[#2dd4bf]" />;
+      case 'Rocket': return <Rocket className="w-5 h-5 text-[#2dd4bf]" />;
+      default: return <Sparkles className="w-5 h-5 text-[#2dd4bf]" />;
     }
   };
 
@@ -113,35 +113,35 @@ export const MentorshipPortal: React.FC = () => {
   };
 
   return (
-    <div id="career-mentorship-portal" className="py-10 px-4 sm:px-6 lg:px-8 bg-[#1a1816]">
+    <div id="career-mentorship-portal" className="py-10 px-4 sm:px-6 lg:px-8 bg-black text-white">
       <div className="container mx-auto max-w-7xl">
         
         {/* Banner Section */}
-        <div className="bg-gradient-to-r from-[#1f1d1b] via-[#242220] to-[#1c1a18] rounded-2xl p-6 sm:p-10 text-white shadow-xl border border-[#383430] mb-12 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-[#042f2e] via-[#0f766e] to-[#115e59] rounded-2xl p-6 sm:p-10 text-white shadow-lg border border-[#0d9488]/40 mb-12 relative overflow-hidden">
           <div className="max-w-2xl relative z-10 space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2d2a27] text-[#c99c7b] text-xs font-semibold uppercase tracking-wider border border-[#3e3833]">
-              <Sparkles className="w-3.5 h-3.5 text-[#c99c7b]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 text-[#2dd4bf] text-xs font-semibold uppercase tracking-wider border border-[#2dd4bf]/30">
+              <Sparkles className="w-3.5 h-3.5 text-[#2dd4bf]" />
               <span>GBU Career Mentorship Network</span>
             </div>
             
-            <h2 className="font-locania text-2xl sm:text-4xl font-extrabold tracking-wide text-[#f5f2ed]">
+            <h2 className="font-locania text-2xl sm:text-4xl font-extrabold tracking-wide text-white">
               Bridge the Gap Between Campus & Global Careers
             </h2>
             
-            <p className="text-xs sm:text-sm text-[#a1958b] font-editorial text-[16px] sm:text-[18px] leading-relaxed">
+            <p className="text-xs sm:text-sm text-teal-100 font-editorial text-[16px] sm:text-[18px] leading-relaxed">
               Connect directly with alumni mentors excelling in global tech giants, civil services, Tier-1 consulting, biotechnology labs, and venture-backed startups.
             </p>
 
             <div className="pt-2 flex flex-wrap gap-3">
               <a
                 href="#available-mentors"
-                className="px-4 py-2 bg-[#8d7d70] text-[#141414] hover:bg-[#a1958b] text-xs font-bold uppercase tracking-wider rounded-lg transition-colors cursor-pointer"
+                className="px-4 py-2 bg-[#0d9488] text-white hover:bg-[#0f766e] text-xs font-bold uppercase tracking-wider rounded-lg transition-colors cursor-pointer shadow-xs border border-[#0d9488]"
               >
                 Browse Mentors ({mentors.length})
               </a>
               <a
                 href="#alumni-job-board"
-                className="px-4 py-2 bg-[#2d2a27] text-[#c99c7b] hover:bg-[#383430] text-xs font-bold uppercase tracking-wider rounded-lg border border-[#3e3833] transition-colors cursor-pointer"
+                className="px-4 py-2 bg-black/50 text-[#2dd4bf] hover:bg-black/70 text-xs font-bold uppercase tracking-wider rounded-lg border border-[#2dd4bf]/40 transition-colors cursor-pointer"
               >
                 Job & Referral Board ({jobs.length})
               </a>
@@ -153,17 +153,17 @@ export const MentorshipPortal: React.FC = () => {
         <div className="mb-12">
           <div className="flex items-center justify-between mb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#c99c7b]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#2dd4bf]">
                 Structured Guidance
               </span>
-              <h3 className="font-locania text-xl sm:text-2xl font-bold text-[#f5f2ed]">
+              <h3 className="font-locania text-xl sm:text-2xl font-bold text-white">
                 Mentorship Tracks for Graduates
               </h3>
             </div>
             {selectedTrack !== 'All' && (
               <button
                 onClick={() => setSelectedTrack('All')}
-                className="text-xs font-semibold text-[#c99c7b] hover:underline cursor-pointer"
+                className="text-xs font-semibold text-[#2dd4bf] hover:underline cursor-pointer"
               >
                 Show All Tracks
               </button>
@@ -179,32 +179,32 @@ export const MentorshipPortal: React.FC = () => {
                   onClick={() => setSelectedTrack(isSelected ? 'All' : track.category)}
                   className={`p-5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between ${
                     isSelected
-                      ? 'bg-[#2d2a27] text-white border-[#8d7d70] shadow-md ring-2 ring-[#8d7d70]'
-                      : 'bg-[#242220] text-[#f5f2ed] border-[#383430] hover:border-[#504842] hover:shadow-xs'
+                      ? 'bg-[#042f2e] text-white border-[#0d9488] shadow-sm ring-2 ring-[#0d9488]'
+                      : 'bg-[#0f0f12] text-white border-[#27272a] hover:border-[#0d9488]/50 hover:shadow-xs'
                   }`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <div className="p-2.5 rounded-lg bg-[#1c1a18] border border-[#383430]">
+                      <div className="p-2.5 rounded-lg bg-[#18181b] border border-[#27272a]">
                         {getTrackIcon(track.iconName)}
                       </div>
-                      <span className={`text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-[#383430] ${
-                        isSelected ? 'bg-[#383430] text-[#c99c7b]' : 'bg-[#1c1a18] text-[#c99c7b]'
+                      <span className={`text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${
+                        isSelected ? 'bg-black text-[#2dd4bf] border-[#0f766e]' : 'bg-[#042f2e] text-[#2dd4bf] border-[#0f766e]'
                       }`}>
                         {track.activeMentorCount} Mentors
                       </span>
                     </div>
 
-                    <h4 className="font-locania text-base font-bold mb-1 text-[#f5f2ed]">
+                    <h4 className="font-locania text-base font-bold mb-1 text-white">
                       {track.title}
                     </h4>
 
-                    <p className={`text-xs leading-relaxed ${isSelected ? 'text-[#d6cfc7]' : 'text-[#a1958b]'}`}>
+                    <p className={`text-xs leading-relaxed ${isSelected ? 'text-teal-100' : 'text-[#a1a1aa]'}`}>
                       {track.description}
                     </p>
                   </div>
 
-                  <div className="pt-4 mt-3 border-t border-[#383430] flex items-center justify-between text-xs font-semibold text-[#c99c7b]">
+                  <div className="pt-4 mt-3 border-t border-[#27272a] flex items-center justify-between text-xs font-semibold text-[#2dd4bf]">
                     <span>{isSelected ? 'Filter Active' : 'Filter by Track'}</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </div>
@@ -216,37 +216,37 @@ export const MentorshipPortal: React.FC = () => {
 
         {/* AVAILABLE MENTORS SECTION */}
         <div id="available-mentors" className="mb-14 scroll-mt-24">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3 border-b border-[#383430]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3 border-b border-[#27272a]">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#c99c7b]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#2dd4bf]">
                 Book 1-on-1 Sessions
               </span>
-              <h3 className="font-locania text-xl sm:text-2xl font-bold text-[#f5f2ed]">
+              <h3 className="font-locania text-xl sm:text-2xl font-bold text-white">
                 Verified Alumni Mentors ({mentors.length})
               </h3>
             </div>
 
             {/* Mentor Search */}
             <div className="relative w-full sm:w-72">
-              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#78716c]" />
+              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[#71717a]" />
               <input
                 type="text"
                 value={mentorSearch}
                 onChange={(e) => setMentorSearch(e.target.value)}
                 placeholder="Search mentors by topic, name, company..."
-                className="w-full pl-9 pr-3 py-1.5 text-xs bg-[#242220] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                className="w-full pl-9 pr-3 py-1.5 text-xs bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
               />
             </div>
           </div>
 
           {/* Quick Track Options with Working Moving Right Button */}
-          <div className="mb-6 bg-[#201e1c] p-3 rounded-xl border border-[#383430]">
-            <div className="flex items-center justify-between text-xs text-[#a1958b] mb-1.5 px-1">
-              <span className="font-bold uppercase tracking-wider text-[11px] text-[#c99c7b] flex items-center gap-1.5">
-                <Compass className="w-3.5 h-3.5 text-[#c99c7b]" />
+          <div className="mb-6 bg-[#0f0f12] p-3 rounded-xl border border-[#27272a] shadow-2xs">
+            <div className="flex items-center justify-between text-xs text-[#a1a1aa] mb-1.5 px-1">
+              <span className="font-bold uppercase tracking-wider text-[11px] text-[#2dd4bf] flex items-center gap-1.5">
+                <Compass className="w-3.5 h-3.5 text-[#2dd4bf]" />
                 <span>Filter Mentorship Fields</span>
               </span>
-              <span className="text-[10.5px] text-[#78716c] hidden sm:inline">
+              <span className="text-[10.5px] text-[#71717a] hidden sm:inline">
                 Click right arrow to view more fields →
               </span>
             </div>
@@ -269,8 +269,8 @@ export const MentorshipPortal: React.FC = () => {
                     onClick={() => setSelectedTrack(opt.value)}
                     className={`px-3.5 py-1.5 rounded-md text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer shrink-0 border ${
                       isActive
-                        ? 'bg-[#8d7d70] text-[#141414] font-bold border-[#8d7d70] shadow-xs'
-                        : 'bg-[#242220] text-[#c99c7b] border-[#383430] hover:bg-[#2d2a27] hover:text-[#f5f2ed]'
+                        ? 'bg-[#0d9488] text-white font-bold border-[#0d9488] shadow-xs'
+                        : 'bg-[#18181b] text-[#cbd5e1] border-[#27272a] hover:bg-[#27272a] hover:text-[#2dd4bf] hover:border-[#0f766e]'
                     }`}
                   >
                     {opt.label}
@@ -284,37 +284,37 @@ export const MentorshipPortal: React.FC = () => {
             {mentors.map((mentor) => (
               <div
                 key={mentor.id}
-                className="bg-[#242220] rounded-xl border border-[#383430] p-5 shadow-md flex flex-col justify-between hover:border-[#504842] transition-all"
+                className="bg-[#0f0f12] rounded-xl border border-[#27272a] p-5 shadow-sm flex flex-col justify-between hover:border-[#0d9488]/60 hover:shadow-md transition-all"
               >
                 <div>
                   <div className="flex items-start gap-3 mb-3">
                     <img
                       src={mentor.avatarUrl}
                       alt={mentor.fullName}
-                      className="w-14 h-14 rounded-full object-cover border border-[#8d7d70]"
+                      className="w-14 h-14 rounded-full object-cover border border-[#0d9488]/40 bg-[#18181b]"
                     />
                     <div className="min-w-0">
                       <h4 
                         onClick={() => setSelectedAlumniForDetail(mentor)}
-                        className="font-locania text-base font-bold text-[#f5f2ed] hover:text-[#c99c7b] cursor-pointer truncate"
+                        className="font-locania text-base font-bold text-white hover:text-[#2dd4bf] cursor-pointer truncate"
                       >
                         {mentor.fullName}
                       </h4>
-                      <p className="text-xs font-semibold text-[#c99c7b] truncate">
+                      <p className="text-xs font-semibold text-[#2dd4bf] truncate">
                         {mentor.currentRole}
                       </p>
-                      <p className="text-xs text-[#a1958b] truncate flex items-center gap-1">
-                        <Briefcase className="w-3 h-3 text-[#8d7d70] shrink-0" />
+                      <p className="text-xs text-[#a1a1aa] truncate flex items-center gap-1">
+                        <Briefcase className="w-3 h-3 text-[#2dd4bf] shrink-0" />
                         <span>{mentor.currentCompany}</span>
                       </p>
                     </div>
                   </div>
 
-                  <div className="text-[11px] text-[#a1958b] bg-[#1c1a18] p-2.5 rounded-lg mb-3 space-y-1 border border-[#383430]">
-                    <p className="font-medium text-[#f5f2ed] truncate">
+                  <div className="text-[11px] text-[#a1a1aa] bg-[#18181b] p-2.5 rounded-lg mb-3 space-y-1 border border-[#27272a]">
+                    <p className="font-medium text-white truncate">
                       {mentor.degree} • Batch {mentor.batchYear}
                     </p>
-                    <p className="text-[10.5px] text-[#8d7d70] flex items-center gap-1">
+                    <p className="text-[10.5px] text-[#2dd4bf] flex items-center gap-1">
                       <MapPin className="w-3 h-3" />
                       <span>{mentor.location}</span>
                     </p>
@@ -323,13 +323,13 @@ export const MentorshipPortal: React.FC = () => {
                   {/* Mentorship Focus Areas */}
                   {mentor.mentorshipTopics && mentor.mentorshipTopics.length > 0 && (
                     <div className="mb-4">
-                      <p className="text-[10px] font-bold uppercase tracking-wider text-[#c99c7b] mb-1">
+                      <p className="text-[10px] font-bold uppercase tracking-wider text-[#2dd4bf] mb-1">
                         Can Advise On:
                       </p>
-                      <ul className="space-y-1 text-xs text-[#a1958b]">
+                      <ul className="space-y-1 text-xs text-[#cbd5e1]">
                         {mentor.mentorshipTopics.slice(0, 2).map((top, idx) => (
                           <li key={idx} className="flex items-start gap-1 text-[11px]">
-                            <CheckCircle2 className="w-3 h-3 text-[#c99c7b] shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-3 h-3 text-[#2dd4bf] shrink-0 mt-0.5" />
                             <span className="line-clamp-1">{top}</span>
                           </li>
                         ))}
@@ -338,18 +338,18 @@ export const MentorshipPortal: React.FC = () => {
                   )}
                 </div>
 
-                <div className="pt-3 border-t border-[#383430] grid grid-cols-2 gap-2">
+                <div className="pt-3 border-t border-[#27272a] grid grid-cols-2 gap-2">
                   <button
                     onClick={() => setSelectedAlumniForDetail(mentor)}
-                    className="py-1.5 px-3 rounded-md text-xs font-semibold text-[#d6cfc7] bg-[#2d2a27] hover:bg-[#383430] hover:text-white border border-[#3e3833] transition-colors cursor-pointer text-center"
+                    className="py-1.5 px-3 rounded-md text-xs font-semibold text-[#e4e4e7] bg-[#18181b] hover:bg-[#27272a] border border-[#27272a] transition-colors cursor-pointer text-center"
                   >
                     View Bio
                   </button>
                   <button
                     onClick={() => setSelectedMentorForBooking(mentor)}
-                    className="py-1.5 px-3 rounded-md text-xs font-bold uppercase tracking-wider text-[#141414] bg-[#8d7d70] hover:bg-[#a1958b] transition-colors cursor-pointer text-center flex items-center justify-center gap-1.5"
+                    className="py-1.5 px-3 rounded-md text-xs font-bold uppercase tracking-wider text-white bg-[#0d9488] hover:bg-[#0f766e] transition-colors cursor-pointer text-center flex items-center justify-center gap-1.5 border border-[#0d9488] shadow-2xs"
                   >
-                    <Sparkles className="w-3.5 h-3.5 text-[#141414]" />
+                    <Sparkles className="w-3.5 h-3.5 text-white" />
                     <span>Request</span>
                   </button>
                 </div>
@@ -360,15 +360,15 @@ export const MentorshipPortal: React.FC = () => {
 
         {/* ALUMNI JOB & REFERRAL BOARD */}
         <div id="alumni-job-board" className="scroll-mt-24">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3 border-b border-[#383430]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-3 border-b border-[#27272a]">
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#c99c7b]">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#2dd4bf]">
                 Career Opportunities
               </span>
-              <h3 className="font-locania text-xl sm:text-2xl font-bold text-[#f5f2ed]">
+              <h3 className="font-locania text-xl sm:text-2xl font-bold text-white">
                 Alumni Job & Referral Board
               </h3>
-              <p className="text-xs text-[#a1958b] mt-0.5">
+              <p className="text-xs text-[#a1a1aa] mt-0.5">
                 Roles and internships posted directly by GBU alumni seeking to refer fellow graduates.
               </p>
             </div>
@@ -382,9 +382,9 @@ export const MentorshipPortal: React.FC = () => {
                 }
                 setIsPostJobModalOpen(true);
               }}
-              className="px-4 py-2 rounded-md bg-[#8d7d70] text-[#141414] text-xs font-bold uppercase tracking-wider hover:bg-[#a1958b] transition-colors flex items-center gap-1.5 cursor-pointer self-start sm:self-auto"
+              className="px-4 py-2 rounded-md bg-[#0d9488] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#0f766e] transition-colors flex items-center gap-1.5 cursor-pointer self-start sm:self-auto border border-[#0d9488] shadow-2xs"
             >
-              <PlusCircle className="w-4 h-4 text-[#141414]" />
+              <PlusCircle className="w-4 h-4 text-white" />
               <span>Post an Opportunity</span>
             </button>
           </div>
@@ -407,8 +407,8 @@ export const MentorshipPortal: React.FC = () => {
                     onClick={() => setJobFilter(opt.value)}
                     className={`px-3 py-1.5 rounded-md text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer shrink-0 border ${
                       isActive
-                        ? 'bg-[#c99c7b] text-[#141414] font-bold border-[#c99c7b] shadow-xs'
-                        : 'bg-[#242220] text-[#a1958b] border-[#383430] hover:bg-[#2d2a27] hover:text-[#f5f2ed]'
+                        ? 'bg-[#0d9488] text-white font-bold border-[#0d9488] shadow-xs'
+                        : 'bg-[#18181b] text-[#cbd5e1] border-[#27272a] hover:bg-[#27272a] hover:text-[#2dd4bf] hover:border-[#0f766e]'
                     }`}
                   >
                     {opt.label}
@@ -431,33 +431,33 @@ export const MentorshipPortal: React.FC = () => {
               .map((job) => (
               <div
                 key={job.id}
-                className="bg-[#242220] rounded-xl border border-[#383430] p-5 shadow-md hover:border-[#504842] transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4"
+                className="bg-[#0f0f12] rounded-xl border border-[#27272a] p-5 shadow-sm hover:border-[#0d9488]/60 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4"
               >
                 <div className="space-y-2">
                   <div className="flex flex-wrap items-center gap-2">
-                    <h4 className="font-locania text-lg font-bold text-[#f5f2ed]">
+                    <h4 className="font-locania text-lg font-bold text-white">
                       {job.title}
                     </h4>
-                    <span className="px-2 py-0.5 rounded text-[10.5px] font-bold uppercase tracking-wider bg-[#2d2a27] text-[#c99c7b] border border-[#3e3833]">
+                    <span className="px-2 py-0.5 rounded text-[10.5px] font-bold uppercase tracking-wider bg-[#042f2e] text-[#2dd4bf] border border-[#0f766e]">
                       {job.type}
                     </span>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs text-[#a1958b]">
-                    <span className="flex items-center gap-1 font-semibold text-[#f5f2ed]">
-                      <Building2 className="w-3.5 h-3.5 text-[#c99c7b]" />
+                  <div className="flex flex-wrap items-center gap-4 text-xs text-[#a1a1aa]">
+                    <span className="flex items-center gap-1 font-semibold text-white">
+                      <Building2 className="w-3.5 h-3.5 text-[#2dd4bf]" />
                       <span>{job.company}</span>
                     </span>
                     <span className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-[#8d7d70]" />
+                      <MapPin className="w-3.5 h-3.5 text-[#2dd4bf]" />
                       <span>{job.location}</span>
                     </span>
-                    <span className="text-[11px] text-[#c99c7b]">
-                      Referred by: <strong>{job.postedByAlumniName}</strong> ({job.postedBySchool} '{job.postedByBatch})
+                    <span className="text-[11px] text-[#2dd4bf]">
+                      Referred by: <strong className="text-white">{job.postedByAlumniName}</strong> ({job.postedBySchool} '{job.postedByBatch})
                     </span>
                   </div>
 
-                  <p className="text-xs text-[#d6cfc7] leading-relaxed max-w-3xl">
+                  <p className="text-xs text-[#cbd5e1] leading-relaxed max-w-3xl">
                     {job.description}
                   </p>
 
@@ -465,7 +465,7 @@ export const MentorshipPortal: React.FC = () => {
                     {job.skillsRequired.map((skill, i) => (
                       <span
                         key={i}
-                        className="px-2 py-0.5 rounded text-[10.5px] bg-[#1c1a18] text-[#d6cfc7] border border-[#383430]"
+                        className="px-2 py-0.5 rounded text-[10.5px] bg-[#18181b] text-[#cbd5e1] border border-[#27272a]"
                       >
                         {skill}
                       </span>
@@ -476,12 +476,12 @@ export const MentorshipPortal: React.FC = () => {
                 <div className="flex flex-col sm:flex-row md:flex-col items-end gap-2 shrink-0">
                   <a
                     href={`mailto:${job.applicationUrlOrEmail}?subject=Application / Referral via GBU AlumNet: ${job.title}`}
-                    className="px-4 py-2 rounded-md bg-[#8d7d70] text-[#141414] text-xs font-bold uppercase tracking-wider hover:bg-[#a1958b] transition-colors cursor-pointer flex items-center gap-1.5 text-center"
+                    className="px-4 py-2 rounded-md bg-[#0d9488] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#0f766e] transition-colors cursor-pointer flex items-center gap-1.5 text-center border border-[#0d9488] shadow-2xs"
                   >
                     <span>Request Referral</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-[#141414]" />
+                    <ArrowUpRight className="w-3.5 h-3.5 text-white" />
                   </a>
-                  <span className="text-[10px] text-[#78716c]">
+                  <span className="text-[10px] text-[#71717a]">
                     Posted {job.postedAt}
                   </span>
                 </div>
@@ -494,15 +494,15 @@ export const MentorshipPortal: React.FC = () => {
 
       {/* Post Job Modal */}
       {isPostJobModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-xs overflow-y-auto animate-in fade-in">
-          <div className="relative w-full max-w-lg bg-[#242220] rounded-xl shadow-2xl border border-[#383430] overflow-hidden my-6">
-            <div className="bg-[#1c1a18] text-[#f5f2ed] px-6 py-4 flex items-center justify-between border-b border-[#383430]">
-              <h3 className="font-locania text-lg font-bold text-[#f5f2ed] uppercase">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs overflow-y-auto animate-in fade-in">
+          <div className="relative w-full max-w-lg bg-[#0f0f12] rounded-xl shadow-2xl border border-[#27272a] overflow-hidden my-6">
+            <div className="bg-[#18181b] text-white px-6 py-4 flex items-center justify-between border-b border-[#27272a]">
+              <h3 className="font-locania text-lg font-bold text-white uppercase">
                 Post Job or Internship for GBU Graduates
               </h3>
               <button
                 onClick={() => setIsPostJobModalOpen(false)}
-                className="text-[#a1958b] hover:text-white"
+                className="text-[#a1a1aa] hover:text-white text-lg font-bold"
               >
                 ✕
               </button>
@@ -510,85 +510,85 @@ export const MentorshipPortal: React.FC = () => {
 
             <form onSubmit={handlePostJobSubmit} className="p-6 space-y-3.5 text-xs">
               <div>
-                <label className="block font-semibold text-[#d6cfc7] mb-1">Role Title *</label>
+                <label className="block font-semibold text-[#cbd5e1] mb-1">Role Title *</label>
                 <input
                   type="text"
                   required
                   value={newJobTitle}
                   onChange={(e) => setNewJobTitle(e.target.value)}
                   placeholder="e.g. Associate Product Manager"
-                  className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                  className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Company *</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Company *</label>
                   <input
                     type="text"
                     required
                     value={newJobCompany}
                     onChange={(e) => setNewJobCompany(e.target.value)}
                     placeholder="e.g. Swiggy, PwC, Amazon"
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Employment Type</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Employment Type</label>
                   <select
                     value={newJobType}
                     onChange={(e) => setNewJobType(e.target.value as any)}
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white focus:outline-none focus:border-[#0d9488]"
                   >
-                    <option value="Full-time" className="bg-[#242220]">Full-time</option>
-                    <option value="Internship" className="bg-[#242220]">Internship</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Internship">Internship</option>
                   </select>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Location</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Location</label>
                   <input
                     type="text"
                     value={newJobLocation}
                     onChange={(e) => setNewJobLocation(e.target.value)}
                     placeholder="e.g. Noida / Hybrid"
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
                 <div>
-                  <label className="block font-semibold text-[#d6cfc7] mb-1">Referral / Application Email *</label>
+                  <label className="block font-semibold text-[#cbd5e1] mb-1">Referral / Application Email *</label>
                   <input
                     type="email"
                     required
                     value={newJobEmail}
                     onChange={(e) => setNewJobEmail(e.target.value)}
                     placeholder="alumni@company.com"
-                    className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                    className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block font-semibold text-[#d6cfc7] mb-1">Key Skills Required</label>
+                <label className="block font-semibold text-[#cbd5e1] mb-1">Key Skills Required</label>
                 <input
                   type="text"
                   value={newJobSkills}
                   onChange={(e) => setNewJobSkills(e.target.value)}
                   placeholder="e.g. Python, SQL, Financial modeling"
-                  className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                  className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                 />
               </div>
 
               <div>
-                <label className="block font-semibold text-[#d6cfc7] mb-1">Brief Description & Referral Notes</label>
+                <label className="block font-semibold text-[#cbd5e1] mb-1">Brief Description & Referral Notes</label>
                 <textarea
                   rows={3}
                   value={newJobDesc}
                   onChange={(e) => setNewJobDesc(e.target.value)}
                   placeholder="Brief details about the team, required experience, and how GBU candidates can prepare..."
-                  className="w-full px-3 py-2 bg-[#1a1816] border border-[#383430] rounded-md text-[#f5f2ed] placeholder-[#78716c] focus:outline-none focus:border-[#8d7d70]"
+                  className="w-full px-3 py-2 bg-[#18181b] border border-[#27272a] rounded-md text-white placeholder-[#71717a] focus:outline-none focus:border-[#0d9488]"
                 />
               </div>
 
@@ -596,13 +596,13 @@ export const MentorshipPortal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setIsPostJobModalOpen(false)}
-                  className="px-3 py-1.5 rounded text-[#a1958b] hover:bg-[#2d2a27] cursor-pointer"
+                  className="px-3 py-1.5 rounded text-[#a1a1aa] hover:bg-[#18181b] cursor-pointer"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1.5 rounded bg-[#8d7d70] text-[#141414] font-bold uppercase hover:bg-[#a1958b] cursor-pointer"
+                  className="px-4 py-1.5 rounded bg-[#0d9488] text-white font-bold uppercase hover:bg-[#0f766e] cursor-pointer shadow-2xs border border-[#0d9488]"
                 >
                   Post Opportunity
                 </button>

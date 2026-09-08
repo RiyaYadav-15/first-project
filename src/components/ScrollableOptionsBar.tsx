@@ -92,16 +92,16 @@ export const ScrollableOptionsBar: React.FC<ScrollableOptionsBarProps> = ({
     >
       {/* Left Scroll Button (visible when scrolled or hovered) */}
       {canScrollLeft && (
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 z-20 flex items-center pr-2 bg-gradient-to-r from-[#1e1c1a] via-[#1e1c1a]/90 to-transparent pl-0.5">
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 z-20 flex items-center pr-2 bg-gradient-to-r from-black via-black/90 to-transparent pl-0.5">
           <button
             id={`${idPrefix}-scroll-left-btn`}
             type="button"
             onClick={handleScrollLeft}
-            className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#242220] hover:bg-[#2d2a27] border border-[#383430] hover:border-[#8d7d70] text-[#c99c7b] hover:text-[#f5f2ed] shadow-lg flex items-center justify-center transition-all cursor-pointer active:scale-90"
+            className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#18181b] hover:bg-[#27272a] border border-[#27272a] hover:border-[#14b8a6] text-[#2dd4bf] shadow-md flex items-center justify-center transition-all cursor-pointer active:scale-90"
             title="Scroll options left"
             aria-label="Scroll options left"
           >
-            <ChevronLeft className="w-4 h-4 text-[#c99c7b]" />
+            <ChevronLeft className="w-4 h-4 text-[#2dd4bf]" />
           </button>
         </div>
       )}
@@ -119,20 +119,20 @@ export const ScrollableOptionsBar: React.FC<ScrollableOptionsBarProps> = ({
 
       {/* Working Moving Right Scroll Button */}
       {(canScrollRight || showAlwaysRightButton) && (
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20 flex items-center pl-2 bg-gradient-to-l from-[#1e1c1a] via-[#1e1c1a]/90 to-transparent pr-0.5">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20 flex items-center pl-2 bg-gradient-to-l from-black via-black/90 to-transparent pr-0.5">
           <button
             id={`${idPrefix}-scroll-right-btn`}
             type="button"
             onClick={handleScrollRight}
-            className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#242220] hover:bg-[#2d2a27] border shadow-lg flex items-center justify-center transition-all cursor-pointer active:scale-90 group/btn ${
+            className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#18181b] hover:bg-[#27272a] border shadow-md flex items-center justify-center transition-all cursor-pointer active:scale-90 group/btn ${
               canScrollRight 
-                ? 'border-[#8d7d70] text-[#c99c7b] hover:text-[#f5f2ed] ring-1 ring-[#8d7d70]/30 hover:ring-[#8d7d70]' 
-                : 'border-[#383430] text-[#a1958b] hover:text-[#f5f2ed]'
+                ? 'border-[#0d9488] text-[#2dd4bf] ring-1 ring-[#0d9488]/40 hover:ring-[#14b8a6]' 
+                : 'border-[#27272a] text-[#a1a1aa] hover:text-[#2dd4bf]'
             }`}
             title={canScrollRight ? "Scroll options right" : "Scroll back to first option"}
             aria-label="Scroll options right"
           >
-            <ChevronRight className="w-4 h-4 text-[#c99c7b] group-hover/btn:translate-x-0.5 transition-transform" />
+            <ChevronRight className="w-4 h-4 text-[#2dd4bf] group-hover/btn:translate-x-0.5 transition-transform" />
           </button>
         </div>
       )}

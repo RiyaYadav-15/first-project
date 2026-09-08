@@ -5,41 +5,24 @@
   --font-editorial: "Cormorant Garamond", Garamond, Georgia, serif;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 
-  --color-dark-canvas: #1a1a1a;
-  --color-dark-surface: #22201e;
-  --color-dark-card: #282522;
-  --color-dark-elevated: #302c28;
-  --color-dark-border: #3a3530;
-  --color-dark-border-light: #48423c;
-  
-  --color-accent-bronze: #a1958b;
-  --color-accent-warm: #8d7d70;
-  --color-accent-gold: #c99c7b;
-  --color-accent-cream: #f5f2ed;
-  --color-accent-muted: #786f67;
-
-  --color-gbu-brown-950: #12100e;
-  --color-gbu-brown-900: #1a1816;
-  --color-gbu-brown-800: #24211e;
-  --color-gbu-brown-700: #2d2a27;
-  --color-gbu-brown-600: #3a3530;
-  --color-gbu-brown-500: #504842;
-  --color-gbu-brown-300: #8d7d70;
-  --color-gbu-brown-100: #a1958b;
-  --color-gbu-brown-50: #f5f2ed;
-
-  --color-stone-canvas: #1a1a1a;
-  --color-stone-card: #242220;
-  --color-stone-border: #383430;
-  --color-stone-muted: #8d7d70;
-  --color-stone-dark: #f5f2ed;
+  --color-teal-950: #022c22;
+  --color-teal-900: #042f2e;
+  --color-teal-800: #115e59;
+  --color-teal-700: #0f766e;
+  --color-teal-600: #0d9488;
+  --color-teal-500: #14b8a6;
+  --color-teal-400: #2dd4bf;
+  --color-teal-300: #5eead4;
+  --color-teal-200: #99f6e4;
+  --color-teal-100: #ccfbf1;
+  --color-teal-50: #f0fdfa;
 }
 
-/* Base typography and smooth layout styling */
+/* Base typography and clean black layout styling with white font */
 body {
   font-family: var(--font-sans);
-  background-color: #1a1a1a;
-  color: #f5f2ed;
+  background-color: #000000;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -54,20 +37,20 @@ body {
   font-family: var(--font-editorial);
 }
 
-/* Custom scrollbar for refined editorial dark feel */
+/* Custom scrollbar for sleek black & teal theme */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3e3833;
+  background: #115e59;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8d7d70;
+  background: #14b8a6;
 }
 
 /* Hide scrollbar utility for sleek horizontal option strips */
